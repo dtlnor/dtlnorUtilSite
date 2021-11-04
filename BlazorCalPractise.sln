@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCalPractise", "BlazorCalPractise.csproj", "{2C67D095-9C7C-4288-AD34-9DEC67EC2CB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C67D095-9C7C-4288-AD34-9DEC67EC2CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C67D095-9C7C-4288-AD34-9DEC67EC2CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C67D095-9C7C-4288-AD34-9DEC67EC2CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C67D095-9C7C-4288-AD34-9DEC67EC2CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6714DB4D-6741-4891-9171-8842E2189099}
+	EndGlobalSection
+EndGlobal

@@ -57,7 +57,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-pnXCjO66HUd4w9\/rDATgrERVX0LTA9bWh7as4fCswTc=",
+      "hash": "sha256-Pw3YJ4wf5AlRN6UzS6aLbzujRMmEAr4w0a3wflsVT3g=",
       "url": "index.html"
     },
     {

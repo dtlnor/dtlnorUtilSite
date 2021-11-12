@@ -1,7 +1,101 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<h1>Hello</h1>
 
-Welcome to your new app.
+Welcome to my practise app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+This is a floating point Utility. (For Capcomed calculation)
+
+
+<p>
+    <label>
+        Show float value without floating point error handling(not precise)
+        <input @bind="InputValue"/>
+    </label>
+</p>
+
+<p>
+    FloatOrigin: <code>@FloatOrigin</code> <br>
+    HexFloat: <code>@HexFloat</code> <br>
+    DoubleFRounded: <code>@DoubleFRounded</code> <br>
+    RoundResult: <code>@RoundResult</code> <br>
+    FloorResult: <code>@FloorResult</code> <br>
+    CompenFloorResult: <code>@CompenFloorResult</code> <br>
+    CompenRoundResult: <code>@CompenRoundResult</code> <br>
+</p>
+
+@code {
+
+    private string _InputValue;
+    private string InputValue {
+        get => _InputValue;
+        set
+        {
+            _InputValue = value;
+            InputValueOnchange();
+        }
+    }
+
+    private float FloatOrigin { get; set; }
+
+    private string HexFloat { get; set; } = "0x00000000";
+
+    private double DoubleFRounded { get; set; }
+
+    private Int32 RoundResult { get; set; }
+
+    private Int32 FloorResult { get; set; }
+
+    private Int32 CompenFloorResult { get; set; }
+
+    private Int32 CompenRoundResult { get; set; }
+
+
+    private void InputValueOnchange()
+    {
+        FloatOrigin = float.Parse(InputValue);
+        HexFloat = floatToHexString(FloatOrigin);
+        DoubleFRounded = fround(FloatOrigin);
+        RoundResult = rounding(DoubleFRounded);
+        FloorResult = flooring(DoubleFRounded);
+        CompenFloorResult = compenFloor(DoubleFRounded);
+    }
+    private void demo()
+    {
+        double fff = 1.05f;
+        InputValue = String.Format("{0}", 160 * (double)fff);
+    }
+    static string floatToHexString(float f)
+    {
+        var bytes = BitConverter.GetBytes((float)f);
+        var i = BitConverter.ToUInt32(bytes, 0);
+        return "0x" + i.ToString("X8");
+    }
+    static string doubleToHexString(double d)
+    {
+        var bytes = BitConverter.GetBytes((double)d);
+        var i = BitConverter.ToUInt64(bytes, 0);
+        return "0x" + i.ToString("X8");
+    }
+    static double fround(float f)
+    {
+        return (double)f;
+    }
+    static Int32 flooring(double d)
+    {
+        return (Int32)d;
+    }
+    static Int32 rounding(double d)
+    {
+        return (Int32)((double)0.5f + d);
+    }
+    static Int32 compenFloor(double d)
+    {
+        return (Int32)((double)0.1f + d);
+    }
+    static Int32 compenRound(double d)
+    {
+        return (Int32)((double)0.1f + (double)0.5f + d);
+    }
+
+}

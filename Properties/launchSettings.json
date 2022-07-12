@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BlazorCalPractise": {
+    "dtlnorUtilSite": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

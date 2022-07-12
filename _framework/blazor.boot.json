@@ -2,7 +2,7 @@
   "cacheBootResources": true,
   "config": [ ],
   "debugBuild": false,
-  "entryAssembly": "BlazorCalPractise",
+  "entryAssembly": "dtlnorUtilSite",
   "icuDataMode": 0,
   "linkerEnabled": true,
   "resources": {
@@ -22,7 +22,7 @@
       "Microsoft.JSInterop.dll": "sha256-TR5hDhis1xKErFGi0z7WTfCvkHgS9BWrl9meUe7pJ1M=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-ZgZxgsJuivJx1FZBYEZrIMDwbVwRAg9xRMD7wCwEQUM=",
       "System.IO.Pipelines.dll": "sha256-qZYTUS+ga7CydtH54fYPbehFCvx3B49I74G8dxreTog=",
-      "BlazorCalPractise.dll": "sha256-HUvZyBHIH9YbsrR7\/vLAMBzliMSUgNXA16nddDMz\/zE=",
+      "dtlnorUtilSite.dll": "sha256-KtbjvRm8AOqAyNPRV4AdJWiqd+evH3Nyk4olCUdeih8=",
       "System.Collections.Concurrent.dll": "sha256-TpN3sVPiuAXGcMnARxFgRiV2cu6YxoB67uQKU48sPHM=",
       "System.Collections.Immutable.dll": "sha256-8tifw0EmzOBF8bkc5kOLCJAvYlWbJL17G\/rqbcTsNxA=",
       "System.Collections.NonGeneric.dll": "sha256-sD1AMHF3iVdYxZWNWTReMCXwMG2TgcHiBnDCdo5mI4M=",

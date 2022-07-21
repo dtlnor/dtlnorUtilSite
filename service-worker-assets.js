@@ -73,6 +73,10 @@
       "url": "skill-data\/DecoBaseData.json"
     },
     {
+      "hash": "sha256-CPgQ5MVq3qtYjE8yjlVPdVZEbhe9BOf97\/ytb8\/WomM=",
+      "url": "skill-data\/SkillBaseData.json"
+    },
+    {
       "hash": "sha256-84viy2I8MZBxfCY9hUuJztvXzWuwjjDYlGP1W+QB7NA=",
       "url": "skill-data\/SkillMax.json"
     },
@@ -185,7 +189,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-TBgGoXh7fdW\/4r5i5wEFU+RJoRALloN+A\/9igtQX5HU=",
+      "hash": "sha256-rrupMbvrKhwoui3tM3NdGNzQ6tfBXtSRs2rqJL1bfJE=",
       "url": "_framework\/dtlnorUtilSite.dll"
     },
     {
@@ -325,7 +329,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-vX+E4t42eYmI4DnAXW8Gi486hHdMYVza9+sbYz9QYoQ=",
+      "hash": "sha256-gU\/f6aDH\/JX\/MlALcIsa66xcxrq7fzSEGpVvmiMlY1s=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -333,5 +337,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "RQ0bUMv4"
+  "version": "Ze+vw5D4"
 };

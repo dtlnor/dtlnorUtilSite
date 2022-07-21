@@ -1,0 +1,49 @@
+﻿@page "/maxCharmCombin"
+@inject HttpClient Http
+
+<h1>MaxCharmCombin</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (skillNameIDPair == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    nameLookUp = (skillNameIDPair[Enum.GetName(Global.LangIndex.chS)]).ToObject<Dictionary<int, string>>();
+    var charmSkill = new Dictionary<int, string>();
+    foreach (var skill in skillMax)
+    {
+        charmSkill.Add(skill.SkillID, nameLookUp[skill.SkillID]);
+    }
+
+    //eng
+    //chS
+<div class="col-auto">
+    <div class="row">
+        <label class="font-weight-bold">CheckBox List :</label>
+        <CheckList Data="@charmSkill"
+                   TextField="@((item)=>item.Value)"
+                   ValueField="@((item)=>item.Key)"
+                   SelectedValues="@SelectedIds" />
+    </div>
+    <div class="row">
+        <label class="font-weight-bold">Selected Ids :</label>
+        <b>@OutPutValue</b>
+    </div>
+    <br />
+    <div class="row">
+        <span class="col-auto"></span>
+        <button class="form-control col-auto btn btn-primary" @onclick="ShowCharmCombins">Show Checked Values</button>
+    </div>
+    <br />
+    <div class="form-group row">
+        <label>
+            Example textarea
+            <textarea class="form-control col-auto" rows="5" @bind="CharmCombinText"></textarea>
+        </label>
+    </div>
+
+</div>
+}

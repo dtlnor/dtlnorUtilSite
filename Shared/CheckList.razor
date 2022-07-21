@@ -1,0 +1,52 @@
+﻿@typeparam TItem
+<div>
+
+    @if (Data != null)
+    {
+        foreach (var item in Data)
+        {
+            var Text = TextField?.Invoke(item);
+            var Value = ValueField?.Invoke(item).ToString();
+            bool Checked = false;
+            if (SelectedValues.Contains(Value))
+            {
+                Checked = true;
+            }
+            <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" style="cursor:pointer;">
+                <input type="checkbox" class="btn-check" autocomplete="off" style="display:none;"
+                checked=@Checked @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" /> @Text
+            </label>
+            }
+        }
+</div>
+
+@code {
+    //Data for the Checkbox
+    [Parameter] public IEnumerable<TItem> Data { get; set; }
+    // The field to be shown adjacent to checkbox
+    [Parameter] public Func<TItem, string> TextField { get; set; }
+    // The Value which checkbox will return when checked
+    [Parameter] public Func<TItem, object> ValueField { get; set; }
+    // The array which contains the list of selected checkboxs
+    [Parameter] public List<string> SelectedValues { get; set; }
+
+    //Method to update the selected value on click on checkbox
+    public void CheckboxClicked(string aSelectedId, object aChecked)
+    {
+        if ((bool)aChecked)
+        {
+            if (!SelectedValues.Contains(aSelectedId))
+            {
+                SelectedValues.Add(aSelectedId);
+            }
+        }
+        else
+        {
+            if (SelectedValues.Contains(aSelectedId))
+            {
+                SelectedValues.Remove(aSelectedId);
+            }
+        }
+        StateHasChanged();
+    }
+}  

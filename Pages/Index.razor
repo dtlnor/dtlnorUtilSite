@@ -63,6 +63,7 @@ CompenRoundResult: <code>@CompenRoundResult</code> <br>
     {
         FloatOrigin = float.Parse(InputValue);
         HexFloat = floatToHexString(FloatOrigin);
+        HexFloatLE = floatToHexStringLE(FloatOrigin);
         DoubleFRounded = fround(FloatOrigin);
         RoundResult = rounding(DoubleFRounded);
         FloorResult = flooring(DoubleFRounded);
@@ -85,6 +86,17 @@ CompenRoundResult: <code>@CompenRoundResult</code> <br>
         var bytes = BitConverter.GetBytes((double)d);
         var i = BitConverter.ToUInt64(bytes, 0);
         return "0x" + i.ToString("X8");
+    }
+    static string floatToHexStringLE(float f)
+    {
+        var bytes = BitConverter.GetBytes((float)f);
+        var i = BitConverter.ToUInt32(bytes, 0);
+        UInt32 result = (UInt32)((UInt32)((i << 24) & 0xff000000) |
+            ((i << 8) & 0xff0000) |
+            ((i >> 8) & 0xff00) |
+            ((i >> 24) & 0xff));
+        return "0x" + result.ToString("X8");
+
     }
     static double fround(float f)
     {

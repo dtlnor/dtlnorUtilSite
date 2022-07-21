@@ -1,9 +1,7 @@
 ﻿@page "/maxCharmCombin"
 @inject HttpClient Http
 
-<h1>MaxCharmCombin</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
+<h1>Charm Combination Generator</h1>
 
 @if (skillNameIDPair == null)
 {
@@ -13,13 +11,11 @@ else
 {
     nameLookUp = (skillNameIDPair[Enum.GetName(Global.LangIndex.chS)]).ToObject<Dictionary<int, string>>();
     var charmSkill = new Dictionary<int, string>();
-    foreach (var skill in skillMax)
+    foreach (var skill in skillMaxs)
     {
         charmSkill.Add(skill.SkillID, nameLookUp[skill.SkillID]);
     }
 
-    //eng
-    //chS
 <div class="col-auto">
     <div class="row">
         <label class="font-weight-bold">Toggle the skill you want in charm :</label>
@@ -31,19 +27,25 @@ else
     <br />
     <div class="row">
         <br />
-        <label class="font-weight-bold">Selected Skills :</label>
+        <label class="font-weight-bold">Selected @SelectedIds.Count() Skills :</label>
         <b>@OutPutValue</b>
+        <br />
+        <label class="font-weight-bold">@CharmCount Charm Generated.</label>
     </div>
     <br />
     <div class="row">
         <span class="col-auto"></span>
-        <button class="form-control col-auto btn btn-primary" @onclick="ShowCharmCombins">Show Checked Values</button>
+        <button class="form-control col-auto btn btn-primary" @onclick="ShowCharmCombins">Show Checked Combinations</button>
     </div>
     <br />
     <div class="form-group row">
         <label>
-            Charm generated for input to Armor search. (only support Max Charm Combinations at the moment).
-            <textarea class="form-control col-auto" rows="5" @bind="CharmCombinText"></textarea>
+            Charm generated for input to Armor search. (only support Max Charm Combinations at the moment).<br/>
+            @for (int i = 0; i < CharmCombinText.Count; i++)
+            {
+            <b>from @( (i*2500 > int.Parse(CharmCount)) ? CharmCount : i * 2500) to @( ( (i+1)*2500 > int.Parse(CharmCount)) ? CharmCount : (i+1) * 2500)</b>
+                <textarea class="form-control col-auto" rows="5" @bind="@CharmCombinText[i]"></textarea>
+            }
         </label>
     </div>
 

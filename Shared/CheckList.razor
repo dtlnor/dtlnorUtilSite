@@ -3,30 +3,45 @@
 
     @if (Data != null)
     {
-        foreach (var item in Data)
-        {
-            var Text = TextField?.Invoke(item);
-            var Value = ValueField?.Invoke(item).ToString();
-            bool Checked = false;
-            if (SelectedValues.Contains(Value))
+        //foreach (var icon in IconList)
+        //{
+            foreach (var item in Data)
             {
-                Checked = true;
+
+                var Text = TextField?.Invoke(item);
+                //var IconGroup = GroupField?.Invoke(item);
+                var Value = ValueField?.Invoke(item).ToString();
+                //if (IconGroup == icon)
+                //{
+
+                    bool Checked = false;
+                    if (SelectedValues.Contains(Value))
+                    {
+                        Checked = true;
+                    }
+
+                    <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" style="cursor:pointer;">
+                        <input type="checkbox" class="btn-check" autocomplete="off" style="display:none;"
+                                checked=@Checked @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" /> @Text
+                    </label>
+                //}
             }
-            <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" style="cursor:pointer;">
-                <input type="checkbox" class="btn-check" autocomplete="off" style="display:none;"
-                checked=@Checked @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" /> @Text
-            </label>
-            }
-        }
+            //<br /> <br />
+        //}
+    }
 </div>
 
 @code {
     //Data for the Checkbox
     [Parameter] public IEnumerable<TItem> Data { get; set; }
+    // Iconlist for the Checkbox
+    [Parameter] public IEnumerable<int> IconList { get; set; }
     // The field to be shown adjacent to checkbox
     [Parameter] public Func<TItem, string> TextField { get; set; }
     // The Value which checkbox will return when checked
     [Parameter] public Func<TItem, object> ValueField { get; set; }
+    // The Group which checkbox belong to
+    [Parameter] public Func<TItem, int> GroupField { get; set; }
     // The array which contains the list of selected checkboxs
     [Parameter] public List<string> SelectedValues { get; set; }
 

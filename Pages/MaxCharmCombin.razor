@@ -22,14 +22,16 @@ else
     //chS
 <div class="col-auto">
     <div class="row">
-        <label class="font-weight-bold">CheckBox List :</label>
+        <label class="font-weight-bold">Toggle the skill you want in charm :</label>
         <CheckList Data="@charmSkill"
                    TextField="@((item)=>item.Value)"
                    ValueField="@((item)=>item.Key)"
                    SelectedValues="@SelectedIds" />
     </div>
+    <br />
     <div class="row">
-        <label class="font-weight-bold">Selected Ids :</label>
+        <br />
+        <label class="font-weight-bold">Selected Skills :</label>
         <b>@OutPutValue</b>
     </div>
     <br />
@@ -40,7 +42,7 @@ else
     <br />
     <div class="form-group row">
         <label>
-            Example textarea
+            Charm generated for input to Armor search. (only support Max Charm Combinations at the moment).
             <textarea class="form-control col-auto" rows="5" @bind="CharmCombinText"></textarea>
         </label>
     </div>

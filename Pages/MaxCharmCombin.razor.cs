@@ -38,25 +38,32 @@ namespace dtlnorUtilSite.Pages
 
         protected void ShowCharmCombins()
         {
-            OutPutValue = string.Join(",", SelectedIds.ToArray());
+            OutPutValue = string.Join(",", SelectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
 
             IEnumerable<IEnumerable<int>> combins = GetPermutations(SelectedIds.Select(int.Parse).ToList(), 2);
             // construct strings
             string result = string.Empty;
             foreach (var skillPair in combins)
             {
-                OutPutValue += skillPair.First().ToString()+", ";
                 var SkillMax1 = skillMax.Single(skill => skill.SkillID == skillPair.First());
                 var SkillMax2 = skillMax.Single(skill => skill.SkillID == skillPair.Last());
                 var SlotMaxCombine = slotMax.Single(gradeType => gradeType.Grade == SkillMax1.Grade + SkillMax2.Grade);
-                result += string.Join(",", new List<string>{
+                string skillPart = string.Join(",", new List<string>
+                {
                     nameLookUp[SkillMax1.SkillID],
                     SkillMax1.Skill1Max.ToString(),
                     nameLookUp[SkillMax2.SkillID],
-                    SkillMax2.Skill1Max.ToString(),
+                    SkillMax2.Skill1Max.ToString()});
+
+                result += string.Join(",", new List<string>
+                {
+                    skillPart,
                     SlotMaxCombine.Slot1Lv.ToString(),
                     SlotMaxCombine.Slot2Lv.ToString(),
-                    SlotMaxCombine.Slot3Lv.ToString() + "\n"});
+                    SlotMaxCombine.Slot3Lv.ToString() + "\n"
+                });
+
+                result += skillPart + ",4,0,0\n";
             }
             CharmCombinText = result;
             StateHasChanged();

@@ -53,7 +53,7 @@ namespace dtlnorUtilSite.Pages
                     nameLookUp[SkillMax1.SkillID],
                     SkillMax1.Skill1Max.ToString(),
                     nameLookUp[SkillMax2.SkillID],
-                    SkillMax2.Skill1Max.ToString()});
+                    SkillMax2.Skill2Max.ToString()});
 
                 result += string.Join(",", new List<string>
                 {

@@ -38,14 +38,27 @@ namespace dtlnorUtilSite.Pages
                     (t1, t2) => t1.Concat(new T[] { t2 }));
         }
 
+        static IEnumerable<IEnumerable<T>> PermutationsWithRepetition<T>(IEnumerable<T> list, int length)
+        {
+            if (length <= 0)
+                yield return Array.Empty<T>();
+            else
+            {
+                foreach (var i in list)
+                    foreach (var c in PermutationsWithRepetition(list, length - 1))
+                        yield return c.Concat(new T[] { i });
+            }
+        }
+
         protected void ShowCharmCombins()
         {
             OutPutValue = string.Join(",", SelectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
 
-            
+            var skillMaxsDict = skillMaxs.ToDictionary(s => s.SkillID, s => s);
+            var slotMaxsDict = slotMaxs.ToDictionary(s => s.Grade, s => s);
+
             IEnumerable<IEnumerable<int>> combins = GetPermutations(SelectedIds.Select(int.Parse).ToList(), 2);
             // construct strings
-            //string result = string.Empty;
             int charmCount = 0;
 
             var sb = new System.Text.StringBuilder();
@@ -53,9 +66,10 @@ namespace dtlnorUtilSite.Pages
 
             foreach (var skillPair in combins)
             {
-                var skill1 = skillMaxs.Single(skill => skill.SkillID == skillPair.First());
-                var skill2 = skillMaxs.Single(skill => skill.SkillID == skillPair.Last());
-                var slotMaxCombine = slotMaxs.Single(gradeType => gradeType.Grade == skill1.Grade + skill2.Grade);
+                var skill1 = skillMaxsDict[skillPair.First()];
+                var skill2 = skillMaxsDict[skillPair.Last()];
+                var slotMaxCombine = slotMaxsDict[skill1.Grade + skill2.Grade];
+
 
                 string skillPart = string.Join(",", new List<string>
                 {
@@ -96,37 +110,90 @@ namespace dtlnorUtilSite.Pages
             CharmCombinText = stringChunk;
             StateHasChanged();
         }
+
+        public struct CharmRecord
+        {
+            public int skill1ID;
+            public int skill2ID;
+            public int skill1Lv;
+            public int skill2Lv;
+        }
+
         protected void ShowLimitedCharmCombins(int MaxWeight = 5, int Lv4SlotWeight = 2)
         {
             OutPutValue = string.Join(",", SelectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
 
             IEnumerable<IEnumerable<int>> combins = GetPermutations(SelectedIds.Select(int.Parse).ToList(), 2);
+            var skillMaxsDict = skillMaxs.ToDictionary(s => s.SkillID, s => s);
+            var slotMaxsDict = slotMaxs.ToDictionary(s => s.Grade, s => s);
+            var decoDict = decoBaseDatas
+                .Where(d => d.SkillLv == 1)
+                .ToDictionary(d => d.SkillID, d => d);
             // construct strings
             string result = string.Empty;
+
+            var charmList = new List<List<KeyValuePair<int,int>>>();
             foreach (var skillPair in combins)
             {
-                var skill1 = skillMaxs.Single(skill => skill.SkillID == skillPair.First());
-                var skill2 = skillMaxs.Single(skill => skill.SkillID == skillPair.Last());
-                var slotMaxCombine = slotMaxs.Single(gradeType => gradeType.Grade == skill1.Grade + skill2.Grade);
-                var skill1Deco = decoBaseDatas.Single(deco => (deco.SkillID == skill1.SkillID) && (deco.SkillLv == 1));
-                var skill2Deco = decoBaseDatas.Single(deco => (deco.SkillID == skill2.SkillID) && (deco.SkillLv == 1));
+                var skill1 = skillMaxsDict[skillPair.First()];
+                var skill2 = skillMaxsDict[skillPair.Last()];
+                var slotMaxCombine = slotMaxsDict[skill1.Grade + skill2.Grade];
+                var skill1Deco = decoDict[skill1.SkillID];
+                var skill2Deco = decoDict[skill2.SkillID];
                 int skill1MaxWeight = (skill1Deco.DecoLv >= 2) ? skill1.Skill1Max : 0;
-                bool skill1isLv4Deco = skill1Deco.DecoLv == 4;
                 int skill2MaxWeight = (skill2Deco.DecoLv >= 2) ? skill2.Skill2Max : 0;
-                bool skill2isLv4Deco = skill2Deco.DecoLv == 4;
                 int slotWeight = (slotMaxCombine.Slot1Lv >= 2 ? 1 : 0) + (slotMaxCombine.Slot2Lv >= 2 ? 1 : 0) + (slotMaxCombine.Slot3Lv >= 2 ? 1 : 0);
+
+                CharmRecord baseCharm; //Max
+                baseCharm.skill1ID = skill1.SkillID;
+                baseCharm.skill2ID = skill2.SkillID;
+                baseCharm.skill1Lv = skill1.Skill1Max;
+                baseCharm.skill2Lv = skill1.Skill2Max;
 
                 // for Lv3 Slot
                 int Lv3SkillTotalWeight = MaxWeight - slotWeight;
+
+                if (Lv3SkillTotalWeight >= skill1MaxWeight + skill2MaxWeight)
+                {
+                    var shit = new List<KeyValuePair<int, int>>() {
+                        new KeyValuePair<int, int>(skillPair.First(), skill1.Skill1Max),
+                        new KeyValuePair<int, int>(skillPair.Last(), skill2.Skill2Max)
+                    };
+                }
+                else
+                {
+                    var shitlist = GetLimitWeightCombination(baseCharm, skill1MaxWeight, skill2MaxWeight, Lv3SkillTotalWeight);
+                }
+
+
+
+                // for Lv4 Slot
+                int Lv4SkillTotalWeight = MaxWeight - Lv4SlotWeight;
+
                 
             }
             //CharmCombinText = result;
             StateHasChanged();
         }
-        protected List<List<int>> GetLimitRateCombination(int skill1Max, int Skill2Max, int SkillTotalMax)
+        protected static List<CharmRecord> GetLimitWeightCombination(CharmRecord baseCharm, int skill1Max, int Skill2Max, int SkillTotalMax)
         {
-            
-            return null;
+            var skillLvPair = new List<CharmRecord>();
+
+            // for skill 1 and 2 both weighted
+            foreach (int i in Enumerable.Range(1, SkillTotalMax))
+            {
+                int skill1Lv = i;
+                int skill2Lv = SkillTotalMax - i;
+
+                if ((skill1Lv <= skill1Max) && (skill2Lv <= Skill2Max))
+                {
+                    CharmRecord newCharm = baseCharm;
+                    newCharm.skill1Lv = skill1Lv;
+                    newCharm.skill2Lv = skill2Lv;
+                    skillLvPair.Add(baseCharm);
+                }
+            }
+            return skillLvPair;
         }
 
         protected override async Task OnInitializedAsync()

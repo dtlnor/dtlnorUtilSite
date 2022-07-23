@@ -74,37 +74,37 @@
   {
     "SkillID": 13,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
     "SkillID": 14,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
     "SkillID": 15,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
     "SkillID": 16,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
     "SkillID": 17,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
     "SkillID": 18,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
@@ -164,8 +164,8 @@
   {
     "SkillID": 28,
     "Grade": "B",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 2
   },
   {
     "SkillID": 30,
@@ -392,56 +392,56 @@
   {
     "SkillID": 67,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 68,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 69,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 70,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 71,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 72,
     "Grade": "B",
-    "Skill1Max": 0,
+    "Skill1Max": 3,
     "Skill2Max": 2
   },
   {
     "SkillID": 73,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 74,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 75,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 76,
@@ -452,26 +452,26 @@
   {
     "SkillID": 77,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 2,
+    "Skill2Max": 2
   },
   {
     "SkillID": 78,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 79,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 4,
+    "Skill2Max": 4
   },
   {
     "SkillID": 80,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 81,
@@ -494,8 +494,8 @@
   {
     "SkillID": 86,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 3,
+    "Skill2Max": 3
   },
   {
     "SkillID": 87,
@@ -542,8 +542,8 @@
   {
     "SkillID": 94,
     "Grade": "S",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 1,
+    "Skill2Max": 1
   },
   {
     "SkillID": 95,
@@ -560,14 +560,14 @@
   {
     "SkillID": 97,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 1,
+    "Skill2Max": 1
   },
   {
     "SkillID": 98,
     "Grade": "C",
-    "Skill1Max": 0,
-    "Skill2Max": 0
+    "Skill1Max": 1,
+    "Skill2Max": 1
   },
   {
     "SkillID": 99,

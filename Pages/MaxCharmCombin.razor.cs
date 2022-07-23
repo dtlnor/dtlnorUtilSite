@@ -24,6 +24,71 @@ namespace dtlnorUtilSite.Pages
         public List<string> CharmCombinText { get; set; } = new List<string>();
         public string CharmCount { get; set; }
 
+
+        static readonly List<int> newMeldSkill = new()
+        {
+            116,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            131
+        };
+
+        static readonly List<int> noSkillOneInNewMeld = new()
+        {
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            28,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            77,
+            78,
+            79,
+            80,
+            86,
+            94,
+            97,
+            98
+        };
+
+        static readonly List<int> noSkillTwoInNewMeld = new()
+        {
+            28,
+            67,
+            68,
+            69,
+            70,
+            71,
+            73,
+            74,
+            75,
+            77,
+            78,
+            79,
+            80,
+            86,
+            94,
+            97,
+            98
+        };
+
+
         protected void ShowSelectedValues()
         {
             OutPutValue = string.Join(", ", SelectedIds.ToArray());
@@ -70,6 +135,20 @@ namespace dtlnorUtilSite.Pages
                 var skill2 = skillMaxsDict[skillPair.Last()];
                 var slotMaxCombine = slotMaxsDict[skill1.Grade + skill2.Grade];
 
+                if (newMeldSkill.Contains(skillPair.Last())){
+                    if (noSkillOneInNewMeld.Contains(skillPair.First()))
+                    {
+                        continue;
+                    }
+                }
+                else if(newMeldSkill.Contains(skillPair.First()))
+                {
+                    if (noSkillTwoInNewMeld.Contains(skillPair.Last()))
+                    {
+                        continue;
+                    }
+                }
+
 
                 string skillPart = string.Join(",", new List<string>
                 {
@@ -100,6 +179,7 @@ namespace dtlnorUtilSite.Pages
                     sb.Clear();
                 }
             }
+
             if (sb.Length > 0)
             {
                 stringChunk.Add(sb.ToString());

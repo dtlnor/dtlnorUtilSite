@@ -9,48 +9,81 @@
 }
 else
 {
-    string skillNameLang = Enum.GetName(Global.LangIndex.chS);
+    <select class="form-control" @bind="SkillNameLang">
+        @if (Global.LANGUAGE_NAME_LOOKUP != null)
+        {
+            @foreach (var cnt in Global.LANGUAGE_NAME_LOOKUP)
+            {
+                <option value="@cnt.Key">@cnt.Value</option>
+            }
+        }
+    </select>
+    <br />
 
-    nameLookUp = (skillNameIDPair[skillNameLang]).ToObject<Dictionary<int, string>>();
+    nameLookUp = (skillNameIDPair[Enum.GetName(SkillNameLang)]).ToObject<Dictionary<int, string>>();
+    nameLookUp[0] = ""; //set #Rejected# as null
     var charmSkill = new Dictionary<int, string>();
     foreach (var skill in skillMaxs)
     {
         charmSkill.Add(skill.SkillID, nameLookUp[skill.SkillID]);
     }
 
-<div class="col-auto">
+    <div class="col-auto">
 
-    <div class="row">
-        <label class="font-weight-bold">Toggle the skill you want in charm :</label>
-        <CheckList Data="@charmSkill"
-                   TextField="@((item)=>item.Value)"
-                   ValueField="@((item)=>item.Key)"
-                   SelectedValues="@SelectedIds" />
-    </div>
-    <br />
-    <div class="row">
+        <div class="row">
+            <label class="font-weight-bold">Toggle the skill you want in charm :</label>
+            <CheckList Data="@charmSkill"
+                       TextField="@((item)=>item.Value)"
+                       ValueField="@((item)=>item.Key)"
+                       SelectedValues="@SelectedIds" />
+        </div>
         <br />
-        <label class="font-weight-bold">Selected @SelectedIds.Count() Skills :</label>
-        <b>@OutPutValue</b>
+        <div class="row">
+            <br />
+            <label class="font-weight-bold">Selected @SelectedIds.Count() Skills :</label>
+            <b>@OutPutValue</b>
+        </div>
         <br />
-        <label class="font-weight-bold">@CharmCount Charm Generated.</label>
-    </div>
-    <br />
-    <div class="row">
-        <span class="col-auto"></span>
-        <button class="form-control col-auto btn btn-primary" @onclick="ShowCharmCombins">Show Checked Combinations</button>
-    </div>
-    <br />
-    <div class="form-group row">
-        <label>
-            Charm generated for input to Armor search. (only support Max Charm Combinations at the moment).<br />
-            @for (int i = 0; i < CharmCombinText.Count; i++)
-            {
-                <b>from @( (i*2500 > int.Parse(CharmCount)) ? CharmCount : i * 2500+1) to @( ( (i+1)*2500 > int.Parse(CharmCount)) ? CharmCount : (i+1) * 2500)</b>
-                <textarea class="form-control col-auto" rows="5" @bind="@CharmCombinText[i]"></textarea>
-            }
-        </label>
-    </div>
+        <div class="row">
+            <label class="caption-top col-auto align-content-md-center">
+                Max Effective skill number
+                <select class="form-control col-auto" @bind="MaxWeight">
+                    <option value=10>@("No Limit (Max Possible Charm)")</option>
+                    <option value=3>@("3 Effective Skill")</option>
+                    <option value=4>@("4 Effective Skill")</option>
+                    <option value=5>@("5 Effective Skill")</option>
+                    <option value=6>@("6 Effective Skill")</option>
+                    <option value=7>@("7 Effective Skill")</option>
+                    <option value=8>@("8 Effective Skill")</option>
+                </select>
+            </label>
+            <label class="caption-top col-auto align-content-md-center">
+                Lv4 Slot Weight
+                <select class="form-control col-auto" @bind="Lv4SlotWeight">
+                    <option value=1>@("1 Effective Skill")</option>
+                    <option value=2>@("2 Effective Skill")</option>
+                </select>
+            </label>
+        </div>
+        <br />
+        <div class="row">
+            <span class="col-auto"></span>
+            <button class="form-control col-auto btn btn-primary" @onclick="ShowLimitedCharmCombins">Show Checked Combinations</button>
+        </div>
+        <br />
+        <div class="form-group row">
+            <label>
+                Charm generated for input to Armor search.
+                <br />
+                <label class="font-weight-bold">@(CharmCount == string.Empty ? "" : CharmCount + " Charm Generated.")</label>
+                <br />
+                @for (int i = 0; i < CharmCombinText.Count; i++)
+                {
+                    <b>from @( (i*2500 > int.Parse(CharmCount)) ? CharmCount : i * 2500+1) to @( ( (i+1)*2500 > int.Parse(CharmCount)) ? CharmCount : (i+1) * 2500)</b>
+                    <textarea class="form-control col-auto" rows="5" @bind="@CharmCombinText[i]"></textarea>
+                }
+            </label>
+        </div>
 
-</div>
+    </div>
 }

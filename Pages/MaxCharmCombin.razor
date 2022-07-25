@@ -35,12 +35,12 @@ else
             <CheckList Data="@charmSkill"
                        TextField="@((item)=>item.Value)"
                        ValueField="@((item)=>item.Key)"
-                       SelectedValues="@SelectedIds" />
+                       SelectedValues="@selectedIds" />
         </div>
         <br />
         <div class="row">
             <br />
-            <label class="font-weight-bold">Selected @SelectedIds.Count() Skills :</label>
+            <label class="font-weight-bold">Selected @selectedIds.Count() Skills :</label>
             <b>@OutPutValue</b>
         </div>
         <br />

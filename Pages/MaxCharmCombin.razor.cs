@@ -193,7 +193,7 @@
         [Obsolete("For Max Charm only, use ShowLimitedCharmCombins() instead.")]
         protected void ShowCharmCombins()
         {
-            OutPutValue = string.Join(",", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
+            OutPutValue = string.Join(", ", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
 
             var skillMaxsDict = skillMaxs.ToDictionary(s => s.SkillID, s => s);
             var slotMaxsDict = slotMaxs.ToDictionary(s => s.Grade, s => s);
@@ -295,7 +295,7 @@
 
         protected void ShowLimitedCharmCombins()
         {
-            OutPutValue = string.Join(",", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
+            OutPutValue = string.Join(", ", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
 
             var skillMaxsDict = skillMaxs.ToDictionary(s => s.SkillID, s => s);
             var slotMaxsDict = slotMaxs.ToDictionary(s => s.Grade, s => s);

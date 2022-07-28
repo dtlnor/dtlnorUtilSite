@@ -1,4 +1,11 @@
 {
   "LangName": "ja",
-  "MaxCharmCombintitle": "Charm Combination Generator"
+  "MaxCharmCombinTitle": "Charm Combination Generator",
+  "EffectiveSkill": "Effective Skill",
+  "Lv4SlotWeight": "Lv4 Slot Weight",
+  "MaxPossibleChoice": "No Limit (Max Possible Charm)",
+  "MaxEffectiveSkillNumber": "Max Effective skill number",
+  "SkillButtonPrompt": "Toggle the skill you want in charm :",
+  "Skill": "Skill",
+  "Selected": "Selected"
 }

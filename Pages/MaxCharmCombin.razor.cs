@@ -6,9 +6,11 @@
     using System.Net.Http.Json;
     using System.Threading.Tasks;
     using Newtonsoft.Json.Linq;
+    using Toolbelt.Blazor.I18nText;
 
     public partial class MaxCharmCombin
     {
+
         public static readonly List<int> NewMeldSkill = new()
         {
             116,
@@ -87,7 +89,7 @@
 
         protected string CharmCount { get; set; } = string.Empty;
 
-        protected Global.LangIndex SkillNameLang { get; set; } = Global.LangIndex.chS;
+        protected Global.LangIndex SkillNameLang { get; set; } = Global.LangIndex.eng;
 
         protected int MaxWeight { get; set; } = 5;
 
@@ -472,15 +474,6 @@
             CharmCount = charmCount.ToString();
             CharmCombinText = stringChunk;
             StateHasChanged();
-        }
-
-        protected override async Task OnInitializedAsync()
-        {
-            skillNameIDPair = JObject.Parse((await Http.GetFromJsonAsync<System.Text.Json.JsonElement>("skill-data/SKILL_NAME_LOOKUP.json")).GetRawText());
-            skillMaxs = await Http.GetFromJsonAsync<SkillMax[]>("skill-data/SkillMax.json");
-            slotMaxs = await Http.GetFromJsonAsync<SlotMax[]>("skill-data/SlotMax.json");
-            decoBaseDatas = await Http.GetFromJsonAsync<DecoBaseData[]>("skill-data/DecoBaseData.json");
-            ////skillBaseDatas = await Http.GetFromJsonAsync<SkillBaseData[]>("skill-data/SkillBaseData.json");
         }
 
         [Obsolete("use uint and construct method instead.")]

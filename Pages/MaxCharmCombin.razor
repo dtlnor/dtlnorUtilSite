@@ -1,7 +1,8 @@
 ﻿@page "/maxCharmCombin"
 @inject HttpClient Http
+@inject Toolbelt.Blazor.I18nText.I18nText I18nText
 
-<h1>Charm Combination Generator</h1>
+<h1>@Pagei18n.MaxCharmCombintitle</h1>
 
 @if (skillNameIDPair == null)
 {
@@ -9,7 +10,7 @@
 }
 else
 {
-    <select class="form-control" @bind="SkillNameLang">
+@*    <select class="form-control" @bind="SkillNameLang">
         @if (Global.LANGUAGE_NAME_LOOKUP != null)
         {
             @foreach (var cnt in Global.LANGUAGE_NAME_LOOKUP)
@@ -18,9 +19,22 @@ else
             }
         }
     </select>
-    <br />
+    <br />*@
 
-    nameLookUp = (skillNameIDPair[Enum.GetName(SkillNameLang)]).ToObject<Dictionary<int, string>>();
+    string i18nLangToCapcomLang(string inputLang)
+    {
+        switch (inputLang)
+        {
+            case "en": return "eng";
+            case "zh-Hant": return "chT";
+            case "zh-Hans": return "chS";
+            case "ja": return "jpn";
+            case "ko": return "kor";
+            default: return "eng";
+        }
+    }
+
+    nameLookUp = (skillNameIDPair[i18nLangToCapcomLang(Pagei18n.LangName)]).ToObject<Dictionary<int, string>>();
     nameLookUp[0] = ""; //set #Rejected# as null
     var charmSkill = new Dictionary<int, string>();
     foreach (var skill in skillMaxs)
@@ -29,7 +43,7 @@ else
     }
 
     <div class="col-auto">
-
+        @*@Pagei18n.LangName*@
         <div class="row">
             <label class="font-weight-bold">Toggle the skill you want in charm :</label>
             <CheckList Data="@charmSkill"
@@ -45,7 +59,7 @@ else
         </div>
         <br />
         <div class="row">
-            <label class="caption-top col-auto align-content-md-center">
+            <label class="caption-top col-auto ">
                 Max Effective skill number
                 <select class="form-control col-auto" @bind="MaxWeight">
                     <option value=10>@("No Limit (Max Possible Charm)")</option>
@@ -57,7 +71,7 @@ else
                     <option value=8>@("8 Effective Skill")</option>
                 </select>
             </label>
-            <label class="caption-top col-auto align-content-md-center">
+            <label class="caption-top col-auto">
                 Lv4 Slot Weight
                 <select class="form-control col-auto" @bind="Lv4SlotWeight">
                     <option value=1>@("1 Effective Skill")</option>
@@ -86,4 +100,20 @@ else
         </div>
 
     </div>
+}
+
+@code
+{
+    I18nText.MainPage Pagei18n = new I18nText.MainPage();
+
+    protected override async Task OnInitializedAsync()
+    {
+        skillNameIDPair = JObject.Parse((await Http.GetFromJsonAsync<System.Text.Json.JsonElement>("skill-data/SKILL_NAME_LOOKUP.json")).GetRawText());
+        skillMaxs = await Http.GetFromJsonAsync<SkillMax[]>("skill-data/SkillMax.json");
+        slotMaxs = await Http.GetFromJsonAsync<SlotMax[]>("skill-data/SlotMax.json");
+        decoBaseDatas = await Http.GetFromJsonAsync<DecoBaseData[]>("skill-data/DecoBaseData.json");
+        ////skillBaseDatas = await Http.GetFromJsonAsync<SkillBaseData[]>("skill-data/SkillBaseData.json");
+        Pagei18n = await I18nText.GetTextTableAsync<I18nText.MainPage>(this);
+    }
+
 }

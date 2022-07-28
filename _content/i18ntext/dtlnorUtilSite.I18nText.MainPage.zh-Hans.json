@@ -1,4 +1,11 @@
 {
+  "EffectiveSkill": "有效技能",
   "LangName": "zh-Hans",
-  "MaxCharmCombintitle": "护石组合生成器"
+  "Lv4SlotWeight": "Lv4孔位等效",
+  "MaxCharmCombinTitle": "护石组合生成器",
+  "MaxEffectiveSkillNumber": "最大有效技能",
+  "MaxPossibleChoice": "不限制 (最大有效技能)",
+  "Selected": "选择了",
+  "Skill": "技能",
+  "SkillButtonPrompt": "点选你需要的技能 :"
 }

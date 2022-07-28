@@ -1,23 +1,23 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-qJfb5BGv2K0HhX+ktEh0GF\/54\/jivT186BZFl\/4MJp4=",
+      "hash": "sha256-OoacFt1oacX4Wcp9PxhcRw+vOaIb3DaAWKv3wxR+sV4=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.en.json"
     },
     {
-      "hash": "sha256-UEXx+H8wmitxFsytQV7Buv7bUY9gzsTKeSRQliLNqZY=",
+      "hash": "sha256-oh6RsQob+VJwQ4l9KeEA6\/VJJSpeBTrhKeppnpEyDwc=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.ja.json"
     },
     {
-      "hash": "sha256-dzYedQl5prQkOucvaX6NtIATgPxL9NnFBI+yU8ffBUQ=",
+      "hash": "sha256-90lpB3aSH0sS8X004N2QgllVIWDNxQ4rOk\/9UpRe\/zg=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.ko.json"
     },
     {
-      "hash": "sha256-NwdpeCjUDZo39aH6biQZ44\/4iucpo\/Ar1aZP1ZE\/uHM=",
+      "hash": "sha256-SXlgs08uiDiGBG98rOR8YQEkRdreLYW1a0EPlMypfGE=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.zh-Hans.json"
     },
     {
-      "hash": "sha256-Wqo45BH54gkyl1j+4ExFpbg48NRilKMNqW4nj8FFSfw=",
+      "hash": "sha256-VwAvlkgFE0PWhLgZ2F7AxBQq3It11VNYDyL3Y5ags2k=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.zh-Hant.json"
     },
     {
@@ -85,10 +85,6 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
-      "url": "sample-data\/weather.json"
-    },
-    {
       "hash": "sha256-ANWWS4SZnPM\/e33ugDOGDXJ8Yo53LaTR0NTmEAcOjO0=",
       "url": "skill-data\/DecoBaseData.json"
     },
@@ -141,7 +137,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-evH8ynBHtN75v3ikEF8g3ZY8OQchunND3R\/NDhAYa24=",
+      "hash": "sha256-38UYgNa8SiTJR9wU4rmDC\/t2g6J21vm9NIdk7t2ALFE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -149,7 +145,7 @@
       "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-FRkIumPxStQ9AcPvA5akHHBQ3+cRYDFi3MGvqA2QOTE=",
+      "hash": "sha256-T+d8UsBw9xaQ4NOlyXVvD33utF\/GPAcwSYr5lGae8Ck=",
       "url": "_framework\/dtlnorUtilSite.dll"
     },
     {
@@ -337,7 +333,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-u6E0GOi5mFp5ortyRpF2DKtArolL07uwyGlHQrl78AQ=",
+      "hash": "sha256-QXXC57+IbcUbq16XNwyV1KVO3BIUflVCFXvGyWHrZR8=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -397,5 +393,5 @@
       "url": "_content\/Toolbelt.Blazor.I18nText\/script.module.min.js"
     }
   ],
-  "version": "vca8QhLW"
+  "version": "AkJ+hcr\/"
 };

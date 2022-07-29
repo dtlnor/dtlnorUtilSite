@@ -1,13 +1,19 @@
 {
   "LangName": "ko",
   "MaxCharmCombinTitle": "Charm Combination Generator",
-  "EffectiveSkill": "Effective Skill",
-  "Lv4SlotWeight": "Lv4 Slot Weight",
+  "EffectiveSkill": "Weighted Skill",
+  "EffectiveSkillExplain": "Weighted skill means the corresponding deco of that skill is Lv2 / Lv3. (and treat the skill without deco as weighted skill too)",
+  "Lv4SlotWeight": "Lv4 Slot Equivalent",
   "MaxPossibleChoice": "No Limit (Max Possible Charm)",
-  "MaxEffectiveSkillNumber": "Max Effective skill number",
+  "MaxEffectiveSkillNumber": "Max Weighted skill number",
   "SkillButtonPrompt": "Toggle the skill you want in charm :",
   "Skill": "Skill",
   "Selected": "Selected",
   "ClearSelectedSkill": "Clear All",
-  "NewVersion": "A new version of the application is available. Click here to reload."
+  "NewVersion": "A new version of the application is available. Click here to reload.",
+  "ShowClickedCombinations": "Show Checked Combinations",
+  "GenedCharmPrompt": "Charm generated for input to Armor search.",
+  "NumOfCharmGened": "Charm Generated",
+  "From": "from",
+  "To": "to"
 }

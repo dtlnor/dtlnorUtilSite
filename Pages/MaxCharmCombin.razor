@@ -59,14 +59,14 @@ else
 
     </div>
 
-    <div class="row mt-2">
-        <label class="">@Pagei18n.Selected @selectedIds.Count() @Pagei18n.Skill :</label>
-        <div class="col-auto my-2 border-bottom">
-            <b>@OutPutValue</b>
-        </div>
+    <div class="row mt-4">
+        <label class="col">
+            <span class="text-secondary">@Pagei18n.EffectiveSkillExplain</span>
+        </label>
+
     </div>
 
-    <div class="row">
+    <div class="row mt-1">
         <label class="caption-top col-auto">
             @Pagei18n.MaxEffectiveSkillNumber
             <select class="form-control col-auto" @bind="MaxWeight">
@@ -90,17 +90,28 @@ else
     </div>
         
     <div class="row my-4">
-        <button class="form-control col-auto btn btn-primary" @onclick="OnShowCharmCombinations">Show Checked Combinations</button>
+        <button class="form-control col-auto btn btn-primary" @onclick="OnShowCharmCombinations">@Pagei18n.ShowClickedCombinations</button>
+    </div>
+
+    <div class="row my-2">
+        <label class="">@Pagei18n.Selected @selectedIds.Count() @Pagei18n.Skill :</label>
+        <div class="col-auto my-2 border-bottom">
+            <b>@OutPutValue</b>
+        </div>
     </div>
         
     <div class="row">
         <div class="form-group">
-            <label class="row my-2"> Charm generated for input to Armor search.</label>
-            <label class="row my-2">@(CharmCount == string.Empty ? "" : CharmCount + " Charm Generated.")</label>
+            <label class="row my-2"><span class="col">@Pagei18n.GenedCharmPrompt</span></label>
+            <label class="row my-2"><span class="col">@(CharmCount == string.Empty ? "" : $"{CharmCount} {Pagei18n.NumOfCharmGened}")</span></label>
             @for (int i = 0; i < CharmCombinText.Count; i++)
             {
-                <b class="mt-2">from @( (i*2500 > int.Parse(CharmCount)) ? CharmCount : i * 2500+1) to @( ( (i+1)*2500 > int.Parse(CharmCount)) ? CharmCount : (i+1) * 2500)</b>
-                <textarea class="form-control row mb-2" rows="5" @bind="@CharmCombinText[i]"></textarea>
+                <b class="mt-2 col">
+                    @( (i*MaxCharmInArmorSearch > int.Parse(CharmCount)) ? CharmCount : i * MaxCharmInArmorSearch+1) 
+                    @Pagei18n.To 
+                    @( ( (i+1)*MaxCharmInArmorSearch > int.Parse(CharmCount)) ? CharmCount : (i+1) * MaxCharmInArmorSearch)
+                </b>
+                <textarea class="form-control col mb-2" rows="5" @bind="@CharmCombinText[i]"></textarea>
             }
         </div>
     </div>

@@ -10,6 +10,7 @@
 
     public partial class MaxCharmCombin
     {
+        public static readonly int MaxCharmInArmorSearch = 2500;
 
         public static readonly List<int> NewMeldSkill = new()
         {
@@ -96,13 +97,6 @@
 
         protected int Lv4SlotWeight { get; set; } = 2;
 
-        [Obsolete("template")]
-        protected void ShowSelectedValues()
-        {
-            OutPutValue = string.Join(", ", selectedIds.ToArray());
-            StateHasChanged();
-        }
-
         protected static IEnumerable<IEnumerable<T>> GetPermutations<T>(IEnumerable<T> list, int length)
         {
             if (length == 1)
@@ -137,13 +131,13 @@
         protected static uint ConstructCharmRecord(int skill1ID, int skill2ID, int skill1Lv, int skill2Lv) =>
             (uint)((skill1ID << 24) + (skill2ID << 16) + (skill1Lv << 8) + skill2Lv);
 
-        public static (int Skill1ID, int Skill2ID, int Skill1Lv, int Skill2Lv) DestructCharmRecord(uint charm) => (
+        protected static (int Skill1ID, int Skill2ID, int Skill1Lv, int Skill2Lv) DestructCharmRecord(uint charm) => (
                 (int)(charm >> 24),
                 (int)((charm >> 16) & 0xFF),
                 (int)((charm >> 8) & 0xFF),
                 (int)(charm & 0xFF));
 
-        public static uint GetReverseCharmRecord(uint charm) =>
+        protected static uint GetReverseCharmRecord(uint charm) =>
                 ((charm & 0xFF000000) >> 8) +
                 ((charm & 0x00FF0000) << 8) +
                 ((charm & 0x0000FF00) >> 8) +
@@ -268,7 +262,7 @@
                     slotMaxCombine.Slot3Lv.ToString(),
                 }));
                 charmCount++;
-                if (charmCount % 2500 == 0 && charmCount > 0)
+                if (charmCount % MaxCharmInArmorSearch == 0 && charmCount > 0)
                 {
                     stringChunk.Add(sb.ToString());
                     sb.Clear();
@@ -276,7 +270,7 @@
 
                 sb.AppendLine(skillPart + ",4,0,0");
                 charmCount++;
-                if (charmCount % 2500 == 0 && charmCount > 0)
+                if (charmCount % MaxCharmInArmorSearch == 0 && charmCount > 0)
                 {
                     stringChunk.Add(sb.ToString());
                     sb.Clear();
@@ -403,14 +397,14 @@
                     }
 
                     charmCount++;
-                    if (charmCount % 2500 == 0 && charmCount > 0)
+                    if (charmCount % MaxCharmInArmorSearch == 0 && charmCount > 0)
                     {
                         stringChunk.Add(sb.ToString());
                         sb.Clear();
                     }
                 }
 
-                void doSubList(int skillTotalWeight, bool isLv3, ref HashSet<uint> charmList)
+                void DoSubList(int skillTotalWeight, bool isLv3, ref HashSet<uint> charmList)
                 {
                     if (skillTotalWeight >= skill1MaxWeight + skill2MaxWeight)
                     {
@@ -440,12 +434,11 @@
 
                 // for Lv3 Slot
                 int lv3SkillTotalWeight = MaxWeight - slotWeight;
-                doSubList(lv3SkillTotalWeight, true, ref lv3CharmList);
+                DoSubList(lv3SkillTotalWeight, true, ref lv3CharmList);
 
                 // for Lv4 Slot
                 int lv4SkillTotalWeight = MaxWeight - Lv4SlotWeight;
-                doSubList(lv4SkillTotalWeight, false, ref lv4CharmList);
-
+                DoSubList(lv4SkillTotalWeight, false, ref lv4CharmList);
             }
 
             if (sb.Length > 0)

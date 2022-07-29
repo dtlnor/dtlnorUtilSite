@@ -77,7 +77,7 @@
       "url": "icon-200.png"
     },
     {
-      "hash": "sha256-SypLDz8A0unA5bFiiXLJeoAy24C8aYFfhrBdFm1FMC8=",
+      "hash": "sha256-Zble1MdAx1O4lya8Rt8Zoa0eVNmtwFSXoUS2GN3ljeQ=",
       "url": "index.html"
     },
     {
@@ -105,7 +105,7 @@
       "url": "skill-data\/SlotMax.json"
     },
     {
-      "hash": "sha256-QaH+aduR2E5IwSGugNlmTYmFor9kvVmPJ+TSxS\/neg4=",
+      "hash": "sha256-EYZOq8ezn64ldLTaamNWZec43bXkyi4DxWwj8n8Ox24=",
       "url": "sw-registrator.js"
     },
     {
@@ -397,5 +397,5 @@
       "url": "_content\/Toolbelt.Blazor.I18nText\/script.module.min.js"
     }
   ],
-  "version": "F9mZFbUj"
+  "version": "ajAk3sBM"
 };

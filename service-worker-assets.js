@@ -105,7 +105,7 @@
       "url": "skill-data\/SlotMax.json"
     },
     {
-      "hash": "sha256-jKbQ3P2nIyGFRW52ixN2cBqxmHxoXiNlS+KYx0sNL24=",
+      "hash": "sha256-QaH+aduR2E5IwSGugNlmTYmFor9kvVmPJ+TSxS\/neg4=",
       "url": "sw-registrator.js"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-jYp2xo7rlSOtppiHTm3IIgyXpZiOSYy3VXRfL8yKvl0=",
+      "hash": "sha256-ix6gmWok1wfrfd8eYsrdSTpTteFjJbT9obXLQIZFN\/A=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -149,7 +149,7 @@
       "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-lfS3fOq7GJJZlDWnXTLDFBO1UAyi1H9H7KyU07QELsg=",
+      "hash": "sha256-5tEXJYAzMjM6uOBLPez\/mHl6hxpNbeU0RtHAH6G+vr4=",
       "url": "_framework\/dtlnorUtilSite.dll"
     },
     {
@@ -397,5 +397,5 @@
       "url": "_content\/Toolbelt.Blazor.I18nText\/script.module.min.js"
     }
   ],
-  "version": "eZhf7MRO"
+  "version": "F2bANWwz"
 };

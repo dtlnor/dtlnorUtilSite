@@ -1,10 +1,12 @@
 {
+  "ClearSelectedSkill": "Clear All",
   "EffectiveSkill": "Effective Skill",
   "LangName": "ko",
   "Lv4SlotWeight": "Lv4 Slot Weight",
   "MaxCharmCombinTitle": "Charm Combination Generator",
   "MaxEffectiveSkillNumber": "Max Effective skill number",
   "MaxPossibleChoice": "No Limit (Max Possible Charm)",
+  "NewVersion": "A new version of the application is available. Click here to reload.",
   "Selected": "Selected",
   "Skill": "Skill",
   "SkillButtonPrompt": "Toggle the skill you want in charm :"

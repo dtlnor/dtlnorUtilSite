@@ -132,3 +132,21 @@
         display: block;
     }
 }
+/* /Shared/UpdateAvailableDetector.razor.rz.scp.css */
+.floating-update-button[b-wn3i6oldck] {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem 1.5rem;
+    animation: fadein-b-wn3i6oldck 2s ease-out;
+}
+
+@keyframes fadein-b-wn3i6oldck {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 2rem;
+    }
+}

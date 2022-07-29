@@ -7,5 +7,7 @@
   "MaxEffectiveSkillNumber": "Max Effective skill number",
   "SkillButtonPrompt": "Toggle the skill you want in charm :",
   "Skill": "Skill",
-  "Selected": "Selected"
+  "Selected": "Selected",
+  "ClearSelectedSkill": "Clear All",
+  "NewVersion": "A new version of the application is available. Click here to reload."
 }

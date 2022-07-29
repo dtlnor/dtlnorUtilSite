@@ -1,33 +1,25 @@
 ﻿@typeparam TItem
-<div>
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
+<div>
     @if (Data != null)
     {
-        //foreach (var icon in IconList)
-        //{
-            foreach (var item in Data)
+        foreach (var item in Data)
+        {
+            var Text = TextField?.Invoke(item);
+            var Value = ValueField?.Invoke(item).ToString();
+
+            bool Checked = false;
+            if (SelectedValues.Contains(Value))
             {
-
-                var Text = TextField?.Invoke(item);
-                //var IconGroup = GroupField?.Invoke(item);
-                var Value = ValueField?.Invoke(item).ToString();
-                //if (IconGroup == icon)
-                //{
-
-                    bool Checked = false;
-                    if (SelectedValues.Contains(Value))
-                    {
-                        Checked = true;
-                    }
-
-                    <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" style="cursor:pointer;">
-                        <input type="checkbox" class="btn-check" autocomplete="off" style="display:none;"
-                                checked=@Checked @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" /> @Text
-                    </label>
-                //}
+                Checked = true;
             }
-            //<br /> <br />
-        //}
+
+            <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" style="cursor:pointer;">
+                <input type="checkbox" class="btn-check" autocomplete="off" style="display:none;"
+                        checked=@Checked @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" /> @Text
+            </label>
+        }
     }
 </div>
 
@@ -62,6 +54,8 @@
                 SelectedValues.Remove(aSelectedId);
             }
         }
+        
+        localStorage.SetItemAsync("SelectedValues",SelectedValues);
         StateHasChanged();
     }
-}  
+}

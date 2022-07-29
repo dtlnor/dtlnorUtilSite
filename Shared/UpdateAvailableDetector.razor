@@ -1,0 +1,43 @@
+﻿@*https://whuysentruit.medium.com/blazor-wasm-pwa-adding-a-new-update-available-notification-d9f65c4ad13*@
+
+@inject IJSRuntime _jsRuntime
+@inject Toolbelt.Blazor.I18nText.I18nText I18nText
+
+@if (_newVersionAvailable)
+{
+  <button type="button" class="btn btn-warning shadow floating-update-button" onclick="window.location.reload()">
+    @Pagei18n.NewVersion
+  </button>
+}
+
+@code {
+    
+    I18nText.MainPage Pagei18n = new I18nText.MainPage();
+
+    private bool _newVersionAvailable = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RegisterForUpdateAvailableNotification();
+        Pagei18n = await I18nText.GetTextTableAsync<I18nText.MainPage>(this);
+    }
+
+    private async Task RegisterForUpdateAvailableNotification()
+    {
+        await _jsRuntime.InvokeAsync<object>(
+            identifier: "registerForUpdateAvailableNotification",
+            DotNetObjectReference.Create(this),
+            nameof(OnUpdateAvailable));
+    }
+
+    [JSInvokable(nameof(OnUpdateAvailable))]
+    public Task OnUpdateAvailable()
+    {
+        _newVersionAvailable = true;
+
+        StateHasChanged();
+
+        return Task.CompletedTask;
+    }
+
+}

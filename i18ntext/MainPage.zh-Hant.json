@@ -7,5 +7,7 @@
   "MaxEffectiveSkillNumber": "最大有效技能",
   "SkillButtonPrompt": "點選你需要的技能 :",
   "Skill": "技能",
-  "Selected": "選擇了"
+  "Selected": "選擇了",
+  "ClearSelectedSkill": "清除全部",
+  "NewVersion": "有可用的新版本，按此刷新頁面。"
 }

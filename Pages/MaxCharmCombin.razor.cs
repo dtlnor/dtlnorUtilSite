@@ -89,6 +89,7 @@
 
         protected string CharmCount { get; set; } = string.Empty;
 
+        [Obsolete("Now control by i18n")]
         protected Global.LangIndex SkillNameLang { get; set; } = Global.LangIndex.eng;
 
         protected int MaxWeight { get; set; } = 5;
@@ -190,7 +191,7 @@
             return skillLvPair;
         }
 
-        [Obsolete("For Max Charm only, use ShowLimitedCharmCombins() instead.")]
+        [Obsolete("For Max Charm only, use OnShowCharmCombinations() instead.")]
         protected void ShowCharmCombins()
         {
             OutPutValue = string.Join(", ", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
@@ -293,7 +294,7 @@
             StateHasChanged();
         }
 
-        protected void ShowLimitedCharmCombins()
+        protected void OnShowCharmCombinations()
         {
             OutPutValue = string.Join(", ", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
 
@@ -408,61 +409,42 @@
                     }
                 }
 
-                // TODO : no empty sencond skill pls
-                // for Lv3 Slot
-                int lv3SkillTotalWeight = MaxWeight - slotWeight;
-
-                if (lv3SkillTotalWeight >= skill1MaxWeight + skill2MaxWeight)
+                void doSubList(int skillTotalWeight, bool isLv3, ref HashSet<uint> charmList)
                 {
-                    if (lv3CharmList.Contains(baseCharm) || lv3CharmList.Contains(reverseCharm))
+                    if (skillTotalWeight >= skill1MaxWeight + skill2MaxWeight)
                     {
-                        continue;
-                    }
-
-                    lv3CharmList.Add(baseCharm);
-                    PrintString(baseCharm, true);
-                }
-                else
-                {
-                    var subCharmList = GetLimitWeightCombination(baseCharm, skill1MaxWeight, skill2MaxWeight, lv3SkillTotalWeight);
-                    foreach (var subCharm in subCharmList)
-                    {
-                        if (lv3CharmList.Contains(subCharm) || lv3CharmList.Contains(GetReverseCharmRecord(subCharm)))
+                        if (charmList.Contains(baseCharm) || charmList.Contains(reverseCharm))
                         {
-                            continue;
+                            return;
                         }
 
-                        lv3CharmList.Add(subCharm);
-                        PrintString(subCharm, true);
+                        charmList.Add(baseCharm);
+                        PrintString(baseCharm, isLv3);
+                    }
+                    else
+                    {
+                        var subCharmList = GetLimitWeightCombination(baseCharm, skill1MaxWeight, skill2MaxWeight, skillTotalWeight);
+                        foreach (var subCharm in subCharmList)
+                        {
+                            if (charmList.Contains(subCharm) || charmList.Contains(GetReverseCharmRecord(subCharm)))
+                            {
+                                continue;
+                            }
+
+                            charmList.Add(subCharm);
+                            PrintString(subCharm, isLv3);
+                        }
                     }
                 }
+
+                // for Lv3 Slot
+                int lv3SkillTotalWeight = MaxWeight - slotWeight;
+                doSubList(lv3SkillTotalWeight, true, ref lv3CharmList);
 
                 // for Lv4 Slot
                 int lv4SkillTotalWeight = MaxWeight - Lv4SlotWeight;
-                if (lv4SkillTotalWeight >= skill1MaxWeight + skill2MaxWeight)
-                {
-                    if (lv4CharmList.Contains(baseCharm) || lv4CharmList.Contains(reverseCharm))
-                    {
-                        continue;
-                    }
+                doSubList(lv3SkillTotalWeight, true, ref lv3CharmList);
 
-                    lv4CharmList.Add(baseCharm);
-                    PrintString(baseCharm, false);
-                }
-                else
-                {
-                    var subCharmList = GetLimitWeightCombination(baseCharm, skill1MaxWeight, skill2MaxWeight, lv4SkillTotalWeight);
-                    foreach (var subCharm in subCharmList)
-                    {
-                        if (lv4CharmList.Contains(subCharm) || lv4CharmList.Contains(GetReverseCharmRecord(subCharm)))
-                        {
-                            continue;
-                        }
-
-                        lv4CharmList.Add(subCharm);
-                        PrintString(subCharm, false);
-                    }
-                }
             }
 
             if (sb.Length > 0)

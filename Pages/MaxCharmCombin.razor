@@ -1,6 +1,7 @@
 ﻿@page "/maxCharmCombin"
 @inject HttpClient Http
 @inject Toolbelt.Blazor.I18nText.I18nText I18nText
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <h1>@Pagei18n.MaxCharmCombinTitle</h1>
 
@@ -36,7 +37,7 @@ else
 
     nameLookUp = (skillNameIDPair[i18nLangToCapcomLang(Pagei18n.LangName)]).ToObject<Dictionary<int, string>>();
     nameLookUp[0] = ""; //set #Rejected# as null
-    var charmSkill = new Dictionary<int, string>();
+    charmSkill = new Dictionary<int, string>();
     foreach (var skill in skillMaxs)
     {
         charmSkill.Add(skill.SkillID, nameLookUp[skill.SkillID]);
@@ -45,11 +46,17 @@ else
     @*@Pagei18n.LangName*@
         
     <div class="row">
-        <label class="my-2">@Pagei18n.SkillButtonPrompt</label>
+        <label class="align-items-center align-content-center">
+            <span>@Pagei18n.SkillButtonPrompt</span>
+            <button type="button" class="btn btn-secondary" style="display:none;visibility=hidden;" disabled @onclick="OnAllSelect"></button>
+            <button type="button" class="btn btn-secondary float-end" @onclick="OnClearAllSkill">@Pagei18n.ClearSelectedSkill</button>
+        </label>
+
         <CheckList Data="@charmSkill"
                     TextField="@((item)=>item.Value)"
                     ValueField="@((item)=>item.Key)"
-                    SelectedValues="@selectedIds" />
+                    SelectedValues="@selectedIds" @ref="SkillCheckList"/>
+
     </div>
 
     <div class="row mt-2">
@@ -83,7 +90,7 @@ else
     </div>
         
     <div class="row my-4">
-        <button class="form-control col-auto btn btn-primary" @onclick="ShowLimitedCharmCombins">Show Checked Combinations</button>
+        <button class="form-control col-auto btn btn-primary" @onclick="OnShowCharmCombinations">Show Checked Combinations</button>
     </div>
         
     <div class="row">
@@ -101,6 +108,7 @@ else
 
 @code
 {
+    Dictionary<int, string> charmSkill;
     I18nText.MainPage Pagei18n = new I18nText.MainPage();
 
     protected override async Task OnInitializedAsync()
@@ -111,6 +119,31 @@ else
         decoBaseDatas = await Http.GetFromJsonAsync<DecoBaseData[]>("skill-data/DecoBaseData.json");
         ////skillBaseDatas = await Http.GetFromJsonAsync<SkillBaseData[]>("skill-data/SkillBaseData.json");
         Pagei18n = await I18nText.GetTextTableAsync<I18nText.MainPage>(this);
+
+        if (await localStorage.ContainKeyAsync("SelectedValues"))
+        {
+            var selected = await localStorage.GetItemAsync<List<string>>("SelectedValues");
+            selectedIds.Clear();
+            selectedIds.InsertRange(0, selected.Select(i => i).ToList());
+        }
+        else
+        {
+            await localStorage.SetItemAsync("SelectedValues",selectedIds);
+        }
+    }
+
+    dynamic SkillCheckList;
+    protected void OnClearAllSkill()
+    {
+        selectedIds.Clear();
+        //SkillCheckList.SelectedValues.Clear();
+
+        // not changing local storage
+    }
+    protected void OnAllSelect()
+    {
+        selectedIds.Clear();
+        selectedIds.InsertRange(0, skillMaxs.Select(i => i.SkillID.ToString()).ToList());
     }
 
 }

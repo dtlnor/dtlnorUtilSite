@@ -443,7 +443,7 @@
 
                 // for Lv4 Slot
                 int lv4SkillTotalWeight = MaxWeight - Lv4SlotWeight;
-                doSubList(lv3SkillTotalWeight, true, ref lv3CharmList);
+                doSubList(lv4SkillTotalWeight, true, ref lv4CharmList);
 
             }
 

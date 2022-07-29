@@ -1,23 +1,23 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-b\/AOBOVsZ2Ij15zGNWBeOAsvD0WBXUB+cX0ox+OZ1P0=",
+      "hash": "sha256-nfXiKb3Z8PTiB9USdR0Bmdv705\/FDcPe1Caa5bGTGRg=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.en.json"
     },
     {
-      "hash": "sha256-1JeY7XUo1B0AI3ItwjLoUUeUi7ItdxNTQ5kdL\/cFCYg=",
+      "hash": "sha256-ecqJTgEHX9t4s9WZG4Xq0QCSnc7rBPpZpNibpTldw7A=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.ja.json"
     },
     {
-      "hash": "sha256-RtpGR1x8gaPbiPs7HJj8a\/a8PztCHyKkCs5iSyoDkHA=",
+      "hash": "sha256-0k4yqKx5CezULgOe4eFoJSyoXKpNaiCZCS5cGZpZyXE=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.ko.json"
     },
     {
-      "hash": "sha256-lA63Tklep4UUqWH2qBnbYOkpU7IRCDk9LCv8ZtTLQ8E=",
+      "hash": "sha256-dgHhK9t3kLTIT6ZIsgKKrjPNlR6z2YZ1\/cCACuZooZM=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.zh-Hans.json"
     },
     {
-      "hash": "sha256-KnNWvfj9YHt9cs912koimViIvqvizMMG3dSitaQKYDE=",
+      "hash": "sha256-S1vDAYge8U1y3jdB2MmauboqvvUR2rSbx+N9pQrsL2M=",
       "url": "_content\/i18ntext\/dtlnorUtilSite.I18nText.MainPage.zh-Hant.json"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-wxZyCg3vN6SvdKXXeKZYs83\/jbemHMEHbj9fIyoZxNA=",
+      "hash": "sha256-j1KMxy1lniep3ZWJLD5x3mf8tLcH\/AErtCAdO5ldwLI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -149,7 +149,7 @@
       "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-F16twtd4Ygw+\/T86VR59jDsWR21NOSDYmvwBoiZ9qoM=",
+      "hash": "sha256-6RoUWjkWUcqbgq4314SgAs1CUeE1yZ9r5wc8ahs\/G9I=",
       "url": "_framework\/dtlnorUtilSite.dll"
     },
     {
@@ -397,5 +397,5 @@
       "url": "_content\/Toolbelt.Blazor.I18nText\/script.module.min.js"
     }
   ],
-  "version": "2y1+WsG8"
+  "version": "F9mZFbUj"
 };

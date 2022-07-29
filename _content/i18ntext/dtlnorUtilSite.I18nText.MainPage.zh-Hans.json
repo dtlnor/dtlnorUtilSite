@@ -1,13 +1,19 @@
 {
   "ClearSelectedSkill": "清除全部",
-  "EffectiveSkill": "有效技能",
+  "EffectiveSkill": "等效技能",
+  "EffectiveSkillExplain": "等效技能的意思是该技能对应的珠子是Lv2或者Lv3的。（没有珠子的技能也假设为等效技能）",
+  "From": "从",
+  "GenedCharmPrompt": "用于汇入配装器的护石组合",
   "LangName": "zh-Hans",
   "Lv4SlotWeight": "Lv4孔位等效",
   "MaxCharmCombinTitle": "护石组合生成器",
-  "MaxEffectiveSkillNumber": "最大有效技能",
-  "MaxPossibleChoice": "不限制 (最大有效技能)",
+  "MaxEffectiveSkillNumber": "最大等效技能",
+  "MaxPossibleChoice": "不限制 (最大等效技能)",
   "NewVersion": "有可用的新版本，按此刷新页面。",
+  "NumOfCharmGened": "个护石生成了",
   "Selected": "选择了",
+  "ShowClickedCombinations": "显示选中的组合",
   "Skill": "技能",
-  "SkillButtonPrompt": "点选你需要的技能 :"
+  "SkillButtonPrompt": "点选你需要的技能 :",
+  "To": "到"
 }

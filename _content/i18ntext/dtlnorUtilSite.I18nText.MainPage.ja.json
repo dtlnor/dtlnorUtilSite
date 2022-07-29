@@ -7,7 +7,7 @@
   "LangName": "ja",
   "Lv4SlotWeight": "Lv4スロットの同等加重スキル",
   "MaxCharmCombinTitle": "お守り組み合わせ生成器",
-  "MaxEffectiveSkillNumber": "理論的な最大限スキル",
+  "MaxEffectiveSkillNumber": "加重スキルの数",
   "MaxPossibleChoice": "無制限 (理論的な最大限スキル)",
   "NewVersion": "新しいバージョンのアプリケーションが利用可能です。 ここをクリックしてリロードします。",
   "NumOfCharmGened": "生成されたお守り",

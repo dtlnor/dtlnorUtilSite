@@ -297,6 +297,7 @@
         protected void OnShowCharmCombinations()
         {
             OutPutValue = string.Join(", ", selectedIds.Select(x => nameLookUp[int.Parse(x)]).ToList());
+            StateHasChanged();
 
             var skillMaxsDict = skillMaxs.ToDictionary(s => s.SkillID, s => s);
             var slotMaxsDict = slotMaxs.ToDictionary(s => s.Grade, s => s);
@@ -443,7 +444,7 @@
 
                 // for Lv4 Slot
                 int lv4SkillTotalWeight = MaxWeight - Lv4SlotWeight;
-                doSubList(lv4SkillTotalWeight, true, ref lv4CharmList);
+                doSubList(lv4SkillTotalWeight, false, ref lv4CharmList);
 
             }
 

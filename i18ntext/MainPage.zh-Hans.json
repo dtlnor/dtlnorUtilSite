@@ -4,7 +4,7 @@
   "EffectiveSkill": "等效技能",
   "EffectiveSkillExplain": "等效技能的意思是该技能对应的珠子是Lv2或者Lv3的。（没有珠子的技能也假设为等效技能）",
   "Lv4SlotWeight": "Lv4孔位等效",
-  "MaxPossibleChoice": "不限制 (最大等效技能)",
+  "MaxPossibleChoice": "不限制 (最大可能組合)",
   "MaxEffectiveSkillNumber": "最大等效技能",
   "SkillButtonPrompt": "点选你需要的技能 :",
   "Skill": "技能",

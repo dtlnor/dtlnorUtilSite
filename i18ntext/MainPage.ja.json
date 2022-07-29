@@ -5,7 +5,7 @@
   "EffectiveSkillExplain": "加重スキルとは、そのスキルに対応する装飾品が Lv2 / Lv3 であること。（装飾品なしのスキルも加重スキルように扱います）",
   "Lv4SlotWeight": "Lv4スロットの同等加重スキル",
   "MaxPossibleChoice": "無制限 (理論的な最大限スキル)",
-  "MaxEffectiveSkillNumber": "理論的な最大限スキル",
+  "MaxEffectiveSkillNumber": "加重スキルの数",
   "SkillButtonPrompt": "お守り組み合わせで必要なスキルをクリックします :",
   "Skill": "スキル",
   "Selected": "選択済み",

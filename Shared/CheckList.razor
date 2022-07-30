@@ -15,10 +15,12 @@
                 Checked = true;
             }
 
-            <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" style="cursor:pointer;">
-                <input type="checkbox" class="btn-check" autocomplete="off" style="display:none;"
-                        checked=@Checked @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" /> @Text
+            <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" >
+                <input type="checkbox" class="btn-check" autocomplete="off" 
+                    @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" />
+                @Text
             </label>
+            
         }
     }
 </div>
@@ -35,7 +37,7 @@
     // The Group which checkbox belong to
     [Parameter] public Func<TItem, int> GroupField { get; set; }
     // The array which contains the list of selected checkboxs
-    [Parameter] public List<string> SelectedValues { get; set; }
+    [Parameter] public HashSet<string> SelectedValues { get; set; }
 
     //Method to update the selected value on click on checkbox
     public void CheckboxClicked(string aSelectedId, object aChecked)
@@ -55,7 +57,7 @@
             }
         }
         
-        localStorage.SetItemAsync("SelectedValues",SelectedValues);
-        StateHasChanged();
+        localStorage.SetItemAsync("SelectedValues", SelectedValues);
+        //StateHasChanged();
     }
 }

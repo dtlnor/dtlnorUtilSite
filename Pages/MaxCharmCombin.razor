@@ -135,11 +135,11 @@ else
         {
             var selected = await localStorage.GetItemAsync<List<string>>("SelectedValues");
             selectedIds.Clear();
-            selectedIds.InsertRange(0, selected.Select(i => i).ToList());
+            selectedIds.UnionWith(selected);
         }
         else
         {
-            await localStorage.SetItemAsync("SelectedValues",selectedIds);
+            await localStorage.SetItemAsync("SelectedValues",selectedIds.ToList());
         }
     }
 
@@ -154,7 +154,7 @@ else
     protected void OnAllSelect()
     {
         selectedIds.Clear();
-        selectedIds.InsertRange(0, skillMaxs.Select(i => i.SkillID.ToString()).ToList());
+        selectedIds.UnionWith(skillMaxs.Select(i => i.SkillID.ToString()));
     }
 
 }

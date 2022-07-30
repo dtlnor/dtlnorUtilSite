@@ -8,11 +8,11 @@
     </div>
     <div class="col-auto pe-1">
 	    <select class="form-control form-control-sm float-end" @onchange="OnChangeCurrentLang">
-	        <option value="en" selected="@(CurrentLang == "en")">English</option>
-	        <option value="zh-Hans" selected="@(CurrentLang == "zh-Hans")">简体中文</option>
-	        <option value="zh-Hant" selected="@(CurrentLang == "zh-Hant")">繁體中文</option>
-	        <option value="ja" selected="@(CurrentLang == "ja")">日本語</option>
-	        <option value="ko" selected="@(CurrentLang == "ko")">한국어</option>
+	        <option value="en" selected="@(CurrentLang.Contains("en"))">English</option>
+	        <option value="zh-Hans" selected="@(CurrentLang.Contains("zh-Hans"))">简体中文</option>
+	        <option value="zh-Hant" selected="@(CurrentLang.Contains("zh-Hant"))">繁體中文</option>
+	        <option value="ja" selected="@(CurrentLang.Contains("ja"))">日本語</option>
+	        <option value="ko" selected="@(CurrentLang.Contains("ko"))">한국어</option>
 	    </select>
     </div>
 
@@ -90,7 +90,7 @@
         {
             Console.WriteLine($"Language Changed: {a.LanguageCode}");
         };
-        
+
         await I18nText.SetCurrentLanguageAsync(CurrentLang);
         await localStorage.SetItemAsync("CurrentLang",CurrentLang);
 
@@ -102,6 +102,7 @@
         CurrentLang = args.Value as string;
         await I18nText.SetCurrentLanguageAsync(CurrentLang);
         await localStorage.SetItemAsync("CurrentLang",CurrentLang);
+        StateHasChanged();
     }
 
 }

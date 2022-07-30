@@ -75,7 +75,7 @@
             98,
         };
 
-        protected List<string> selectedIds = new();
+        protected HashSet<string> selectedIds = new();
 
         private JObject skillNameIDPair;
         private SkillMax[] skillMaxs;

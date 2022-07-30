@@ -16,8 +16,8 @@
             }
 
             <label class="btn btn-outline-primary m-1 @(Checked ? "active" : "")" >
-                <input type="checkbox" class="btn-check" autocomplete="off" 
-                    @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" />
+                <input type="checkbox" class="btn-check" autocomplete="off"
+                    checked="@Checked" @onchange="eventArgs => { CheckboxClicked(Value, eventArgs.Value); }" />
                 @Text
             </label>
             

@@ -1,0 +1,937 @@
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Calendar/HxCalendar.razor.rz.scp.css */
+.hx-calendar[b-uq8tfob39y] {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.hx-calendar-navigation[b-uq8tfob39y] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hx-calendar-navigation-button[b-uq8tfob39y] {
+    color: var(--hx-calendar-navigation-button-text-color);
+}
+
+.hx-calendar-month-year-select[b-uq8tfob39y] {
+    display: inline-flex;
+}
+
+.form-select[b-uq8tfob39y] {
+    margin: 0 .125rem;
+    padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+    background-size: 9px 9px;
+    cursor: pointer;
+}
+
+.form-select:not(:hover)[b-uq8tfob39y] {
+    background-image: none;
+    background-color: transparent;
+    width: fit-content;
+    border-color: transparent;
+    transition: all 0.15s ease-in-out;
+}
+
+[b-uq8tfob39y] .btn:hover {
+    background-color: var(--hx-calendar-navigation-button-hover-background);
+}
+
+.form-select:focus:not(:hover)[b-uq8tfob39y] {
+    box-shadow: none;
+}
+
+td[b-uq8tfob39y] {
+    padding: var(--hx-calendar-day-spacing);
+    text-align: center;
+}
+
+td > div[b-uq8tfob39y] {
+    border: var(--hx-calendar-day-border-radius);
+    border-radius: var(--hx-calendar-day-border-radius);
+    background-color: transparent;
+    transition: all .15s ease-in-out;
+}
+
+.hx-calendar-week div[b-uq8tfob39y] {
+    width: var(--hx-calendar-day-width);
+    height: var(--hx-calendar-day-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--hx-calendar-font-size);
+}
+
+.hx-calendar-day-names td[b-uq8tfob39y] {
+    color: var(--hx-calendar-day-names-color);  
+    font-size: .75rem;
+    font-weight: var(--hx-calendar-day-names-font-weight);
+}
+
+.out[b-uq8tfob39y] {
+    color: var(--hx-calendar-day-out-color);
+}
+
+.in[b-uq8tfob39y] {
+    color: var(--hx-calendar-day-in-color);
+}
+
+.disabled[b-uq8tfob39y] {
+    opacity: var(--hx-calendar-day-disabled-opacity);
+    text-decoration: var(--hx-calendar-day-disabled-text-decoration);
+}
+
+td[role="button"]:hover .selected.in[b-uq8tfob39y], 
+td[role="button"] .selected.in[b-uq8tfob39y], 
+td[role="button"]:hover .selected.out[b-uq8tfob39y], 
+td[role="button"] .selected.out[b-uq8tfob39y] {
+    background: var(--hx-calendar-day-selected-background);
+    color: var(--hx-calendar-day-selected-color);
+    border: var(--hx-calendar-day-selected-border);
+}
+
+.hx-calendar-today[b-uq8tfob39y] {
+    border: var(--hx-calendar-day-today-border);
+    background-color: rgba(var(--hx-calendar-day-today-background), var(--hx-calendar-day-today-background-opacity));
+    color: var(--hx-calendar-day-today-color);
+}
+
+.hx-calendar-week td[role="button"]:hover div[b-uq8tfob39y] {
+    background: var(--hx-calendar-day-hover-background);
+    color: unset;
+    border: var(--hx-calendar-day-hover-border);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Chips/HxChipList.razor.rz.scp.css */
+.hx-chip-list[b-0ru8qqxa5p] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--hx-chiplist-gap);
+}
+[b-0ru8qqxa5p] .badge {
+    display: inline-flex;
+    align-items: center;
+}
+
+[b-0ru8qqxa5p] .hx-chip-remove-btn {
+    display: flex;
+    align-items: center;
+    margin: var(--hx-chiplist-chip-remove-btn-margin);
+    opacity: var(--hx-chiplist-chip-remove-btn-opacity);
+}
+
+[b-0ru8qqxa5p] .hx-chip-remove-btn .hx-icon {
+    display: flex;
+}
+
+[b-0ru8qqxa5p] .hx-chip-remove-btn:hover {
+    opacity: 1;
+}
+
+[b-0ru8qqxa5p] .hx-chip-label {
+    font-weight: var(--hx-chiplist-chip-label-font-weight);
+    margin-right: var(--hx-chiplist-chip-label-margin);
+    opacity: var(--hx-chiplist-chip-label-opacity);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/ContextMenus/HxContextMenu.razor.rz.scp.css */
+.hx-context-menu-btn[b-eznrxray2a] {
+    border-radius: var(--hx-context-menu-button-border-radius);
+    padding: 0 4px;
+}
+
+.hx-context-menu-btn:hover[b-eznrxray2a] {
+    background: var(--hx-context-menu-button-hover-background);
+}
+
+.hx-context-menu[b-eznrxray2a] {
+    display: inline-block;
+}
+
+.hx-context-menu .dropdown[b-eznrxray2a] {
+    display: flex;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/ContextMenus/HxContextMenuItem.razor.rz.scp.css */
+a[b-mo5ybhq3h9] {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+[b-mo5ybhq3h9] .hx-context-menu-item-icon {
+    margin-right: var(--hx-context-menu-item-icon-margin-right);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Files/HxInputFileDropZone.razor.rz.scp.css */
+.hx-input-file-drop-zone[b-pju4gl6snf] {
+	border: var(--hx-input-file-drop-zone-border-width) dashed var(--hx-input-file-drop-zone-border-color);
+    border-radius: var(--hx-input-file-drop-zone-border-radius);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: var(--hx-input-file-drop-zone-background-color);
+	cursor: pointer;
+	margin: var(--hx-input-file-drop-zone-mgargin);
+	position: relative;
+    padding: var(--hx-input-file-drop-zone-padding);
+}
+
+.hx-input-file-drop-zone:hover[b-pju4gl6snf], .hx-input-file-drop-zone:focus[b-pju4gl6snf] {
+	background-color: var(--hx-input-file-drop-zone-hover-background-color);
+	border-color: var(--hx-input-file-drop-zone-hover-border-color);
+    box-shadow: var(--hx-input-file-drop-zone-hover-box-shadow);
+}
+
+.hx-input-file-drop-zone[b-pju4gl6snf]  input[type=file] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestInput.razor.rz.scp.css */
+.hx-autosuggest[b-dihoyvta4u] {
+    padding-right: 2.5rem;
+}
+
+.form-control.is-invalid[b-dihoyvta4u] {
+    background-position: center right 2.25rem;
+    padding-right: 4.125rem;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestInternal.razor.rz.scp.css */
+.hx-autosuggest-input-icon[b-k26x0s28yy] {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.form-control-sm ~ .hx-autosuggest-input-icon[b-k26x0s28yy] {
+    font-size: .75rem;
+}
+
+.hx-autosuggest-input-icon div[role="button"]:not(:hover)[b-k26x0s28yy]  .hx-icon {
+    opacity: var(--hx-autosuggest-input-close-icon-opacity);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestItems.razor.rz.scp.css */
+[b-z0vor6e5yl] .hx-autosuggest-items-item-highlighted {
+    background-color: var(--hx-autosuggest-item-highlighted-background-color);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateInternal.razor.rz.scp.css */
+.hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.hx-input-date-predefined-dates) .form-control[b-vy6vrzeamt] {
+	border-top-right-radius: .25rem !important;
+	border-bottom-right-radius: .25rem !important;
+}
+
+.input-group-sm > .hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.hx-input-date-predefined-dates) .form-control[b-vy6vrzeamt] {
+	border-top-right-radius: .2rem !important;
+	border-bottom-right-radius: .2rem !important;
+}
+
+.input-group-lg > .hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.hx-input-date-predefined-dates) .form-control[b-vy6vrzeamt] {
+	border-top-right-radius: .3rem !important;
+	border-bottom-right-radius: .3rem !important;
+}
+
+.hx-input-date-icon[b-vy6vrzeamt] {
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.hx-input-date-dropdown[b-vy6vrzeamt] {
+	padding: var(--hx-input-date-dropdown-padding);
+}
+
+.hx-input-date-calendar[b-vy6vrzeamt] {
+	margin-bottom: var(--hx-input-date-calendar-margin-bottom);
+}
+
+.hx-input-date-dropdown-buttons[b-vy6vrzeamt] {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hx-input-date-has-calendar-icon.hx-input-date-predefined-dates .hx-input-date-icon[b-vy6vrzeamt] {
+	margin-right: 3.5rem;
+}
+
+.hx-input-date-has-calendar-icon .is-invalid[b-vy6vrzeamt] {
+    background-position: right calc(0.375em + 2rem) center;
+}
+
+.hx-input-date-has-calendar-icon .form-control[b-vy6vrzeamt] {
+	padding-right: 4.25rem;
+}
+
+.hx-input-date-has-calendar-icon.input-group-lg.hx-input-date-predefined-dates .hx-input-date-icon[b-vy6vrzeamt] {
+	margin-right: 4.5rem;
+}
+
+.hx-input-date-has-calendar-icon.input-group-lg .form-control[b-vy6vrzeamt] {
+	padding-right: 4.75rem;
+}
+
+.hx-input-date-has-calendar-icon.input-group-sm.hx-input-date-predefined-dates .hx-input-date-icon[b-vy6vrzeamt] {
+	margin-right: 2.5rem;
+}
+
+.hx-input-date-has-calendar-icon.input-group-sm .form-control[b-vy6vrzeamt] {
+    padding-right: 4rem;
+}
+
+.input-group-sm > .hx-input-date-icon[b-vy6vrzeamt] {
+    font-size: .75rem;
+}
+
+.hx-input-date-icon[b-vy6vrzeamt] {
+    z-index: 10;
+}
+
+.hx-input-date.input-group input.form-control.hx-input-date-no-right-border[b-vy6vrzeamt] {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+[b-vy6vrzeamt].form-floating label {
+    /* ::deep.form-floating - there MUST NOT be a space between ::deep and .form-floating */
+    z-index: 10;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateRangeInternal.razor.rz.scp.css */
+.hx-input-date-range > button[b-cguxy625ss], .hx-input-date-range:not(.hx-input-date-range-predefined-ranges) .form-control ~ .form-control[b-cguxy625ss] {
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+}
+
+.input-group-sm > .hx-input-date-range > button[b-cguxy625ss], .input-group-sm > .hx-input-date-range:not(.hx-input-date-range-predefined-ranges) .form-control ~ .form-control[b-cguxy625ss] {
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+.input-group-lg > .hx-input-date-range > button[b-cguxy625ss], .input-group-lg > .hx-input-date-range:not(.hx-input-date-range-predefined-ranges) .form-control ~ .form-control[b-cguxy625ss]  {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+
+.form-control[b-cguxy625ss] {
+    background-clip: border-box;
+}
+
+.hx-input-date-range-dropdown[b-cguxy625ss] {
+    padding: var(--hx-input-date-range-dropdown-padding);
+}
+
+.hx-input-date-range-calendar[b-cguxy625ss] {
+    margin-bottom: var(--hx-input-date-range-calendar-margin-bottom);
+}
+
+.hx-input-date-range-buttons[b-cguxy625ss] {
+    display: flex;
+    justify-content: space-between;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxMultiSelectInternal.razor.rz.scp.css */
+.dropdown-menu[b-kjzuko47a2] {
+    width: 100%;
+    overflow: auto;
+    max-height: var(--hx-multi-select-dropdown-menu-height);
+}
+
+.form-select[readonly]:not([disabled])[b-kjzuko47a2] {
+    background-color: var(--hx-multi-select-background-color);
+}
+
+button.dropdown-item[b-kjzuko47a2],
+.form-control[readonly][b-kjzuko47a2] {
+    cursor: default;
+}
+
+.form-check[b-kjzuko47a2] {
+    margin-bottom: 0;
+}
+
+.form-check-input[b-kjzuko47a2] {
+    margin-left: -1.625em;
+}
+
+.hx-multi-select-input:hover[b-kjzuko47a2] {
+    cursor: default;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/SearchBox/HxSearchBox.razor.rz.scp.css */
+[b-4wqcai4a3p] .dropdown,
+[b-4wqcai4a3p] div[data-bs-toggle="dropdown"],
+[b-4wqcai4a3p] .dropdown-menu {
+	width: 100%; /* override for current .btn-group, see issue #117 */
+}
+
+[b-4wqcai4a3p] .hx-search-box-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+[b-4wqcai4a3p] .hx-search-box-input-icon-end {
+    right: .75rem;
+}
+
+.dropdown-item:not(:active)[b-4wqcai4a3p]  .hx-search-box-item-title {
+    color: var(--hx-search-box-item-title-color);
+}
+
+.dropdown-item:not(:active)[b-4wqcai4a3p]  .hx-search-box-item-subtitle {
+    color: var(--hx-search-box-item-subtitle-color);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/SearchBox/Internal/HxSearchBoxItem.razor.rz.scp.css */
+.hx-search-box-item[b-tfprnxyujh] {
+    display: flex;
+    align-items: center;
+}
+
+[b-tfprnxyujh] .hx-search-box-item-icon {
+    margin: var(--hx-search-box-item-icon-margin);
+    font-size: var(--hx-search-box-item-icon-font-size);
+}
+
+.hx-search-box-item-title[b-tfprnxyujh] {
+    font-size: var(--hx-search-box-item-title-font-size);
+}
+
+.hx-search-box-item-subtitle[b-tfprnxyujh] {
+    font-size: var(--hx-search-box-item-subtitle-font-size);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Grids/HxGrid.razor.rz.scp.css */
+th[b-693m69k5v1]  i {
+    margin-left: .25rem;
+}
+
+[b-693m69k5v1] .hx-grid-sorted i {
+    color: var(--hx-grid-sorted-icon-color);
+}
+
+[b-693m69k5v1] .hx-grid-sortable {
+    color: currentColor;
+
+}
+
+[b-693m69k5v1] .hx-grid-sortable i {
+    visibility: hidden;
+}
+
+[b-693m69k5v1] th:hover.hx-grid-sortable i {
+	visibility: visible;
+}
+
+[b-693m69k5v1] .hx-grid-btn {
+    border-radius: var(--hx-grid-button-border-radius);
+    padding: 0 .25rem;
+    background: transparent;
+    border: none;
+}
+
+[b-693m69k5v1] .hx-grid-btn:hover {
+    background: var(--hx-grid-button-hover-background); 
+}
+
+[b-693m69k5v1] .hx-grid-btn:active { 
+    color: currentColor;
+}
+
+[b-693m69k5v1] .hx-context-menu {
+    opacity: 0;
+}
+
+tr:hover[b-693m69k5v1]  .hx-context-menu {
+    opacity: 1;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Grids/HxPager.razor.rz.scp.css */
+.hx-pager[b-hvgme3gpae] {
+    margin: var(--hx-pager-margin);
+}
+
+.page-item.disabled[b-hvgme3gpae] {
+    cursor: default;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Layouts/HxListLayout.razor.rz.scp.css */
+.hx-list-layout[b-c4syx7uv8l]  .card-body {
+    border-bottom: 1px solid var(--bs-gray-200);
+}
+
+.hx-list-layout-header[b-c4syx7uv8l]  button {
+    white-space: nowrap;
+}
+
+.hx-list-layout-header-dropdown[b-c4syx7uv8l] {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.hx-list-layout-dropdown-menu-link[b-c4syx7uv8l] {
+    display: flex;
+    align-items: center;
+}
+
+[b-c4syx7uv8l] .hx-grid tr:last-child td {
+    border-bottom-width: 0;
+}
+
+[b-c4syx7uv8l] .hx-grid td:first-child,
+[b-c4syx7uv8l] .hx-grid th:first-child {
+    padding-left: 1rem;
+}
+
+[b-c4syx7uv8l] .hx-grid td:last-child,
+[b-c4syx7uv8l] .hx-grid th:last-child {
+    padding-right: 1rem;
+}
+
+[b-c4syx7uv8l] .hx-grid {
+    --hx-context-menu-button-border-radius: .25rem;
+    margin-bottom: 0;
+    font-size: var(--hx-list-layout-table-font-size);
+}
+
+.hx-list-layout-named-view .card-title[b-c4syx7uv8l] {
+    display: flex;
+    align-items: center;
+}
+
+.hx-list-layout-named-view[b-c4syx7uv8l]  .hx-icon {
+    font-size: .75rem;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/ListGroups/HxListGroupItem.razor.rz.scp.css */
+.list-group-numbered .list-group-item[b-nx9a72nvdj] {
+    counter-increment: list-group-counter;
+}
+
+.list-group-numbered .list-group-item[b-nx9a72nvdj]::before {
+    content: counter(list-group-counter) ". ";
+}
+
+.list-group-item-action[b-nx9a72nvdj] {
+    cursor: pointer;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Navigation/HxScrollspy.razor.rz.scp.css */
+.hx-scrollspy[b-gcib8zqxrm]
+{
+	position: relative;
+	overflow: auto;
+	height: 100%;
+}
+
+.hx-scrollspy:focus[b-gcib8zqxrm] {
+	outline: none;
+}
+
+/* Last direct div in Scrollspy container needs to have minimal height of 100% of its parent */
+.hx-scrollspy[b-gcib8zqxrm]  > div:last-child {
+	min-height: 100%;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Navigation/HxSidebar.razor.rz.scp.css */
+.hx-sidebar[b-yk0ay6wa9j] {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	flex-basis: var(--hx-sidebar-width);
+	flex-grow: 1;
+	background-color: var(--hx-sidebar-background-color);
+}
+
+.hx-sidebar-collapse[b-yk0ay6wa9j] {
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+	.hx-sidebar[b-yk0ay6wa9j],
+	.hx-sidebar .nav-menu[b-yk0ay6wa9j] {
+		max-height: 100vh;
+	}
+}
+
+
+.hx-sidebar.collapsed[b-yk0ay6wa9j] {
+	flex-basis: var(--hx-sidebar-collapsed-width);
+	min-width: auto;
+}
+
+.hx-sidebar-header[b-yk0ay6wa9j] {
+	padding: var(--hx-sidebar-header-padding);
+}
+
+.hx-sidebar-body[b-yk0ay6wa9j] {
+	padding: var(--hx-sidebar-body-padding);
+}
+
+.hx-sidebar-footer[b-yk0ay6wa9j] {
+	display: flex;
+	width: 100%;
+	flex-grow: 0;
+	padding: var(--hx-sidebar-footer-padding);
+}
+
+.hx-sidebar-toggler[b-yk0ay6wa9j] {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.hx-sidebar-toggler-icon-wrapper[b-yk0ay6wa9j] {
+	opacity: 0;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	border: var(--hx-sidebar-toggler-border);
+	align-items: center;
+	justify-content: center;
+	background-color: var(--hx-sidebar-toggler-background);
+	color: var(--bs-gray);
+	transition: all .25s ease-in-out;
+}
+
+.hx-sidebar:hover .hx-sidebar-toggler-icon-wrapper[b-yk0ay6wa9j] {
+	opacity: .75;
+}
+
+.hx-sidebar .hx-sidebar-toggler-icon-wrapper:hover[b-yk0ay6wa9j] {
+	opacity: 1;
+}
+
+.navbar-toggler:hover[b-yk0ay6wa9j] {
+	color: var(--bs-primary);
+}
+
+[b-yk0ay6wa9j] a[aria-expanded="true"] .bi-chevron-right {
+	transform: rotate(90deg);
+}
+
+/*Desktop collapsed*/
+.hx-sidebar.collapsed[b-yk0ay6wa9j] {
+	width: var(--hx-sidebar-collapsed-width);
+}
+
+	.hx-sidebar.collapsed[b-yk0ay6wa9j]  .hx-sidebar-brand-name,
+	.hx-sidebar.collapsed[b-yk0ay6wa9j]  .hx-sidebar-item-navlink-content-inner,
+	.hx-sidebar.collapsed[b-yk0ay6wa9j]  .expand-icon {
+		display: none;
+	}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Navigation/HxSidebarBrand.razor.rz.scp.css */
+.hx-sidebar-brand-logo[b-wr8sskoq1t] {
+	width: var(--hx-sidebar-brand-logo-width);
+	height: var(--hx-sidebar-brand-logo-height);
+}
+
+.hx-sidebar-brand-shortname[b-wr8sskoq1t] {
+	background-color: var(--hx-sidebar-brand-shortname-background-color);
+	border-radius: var(--hx-sidebar-brand-shortname-border-radius);
+	width: var(--hx-sidebar-brand-shortname-width);
+	height: var(--hx-sidebar-brand-shortname-height);
+	font-weight: var(--hx-sidebar-brand-shortname-font-weight);
+	color: var(--hx-sidebar-brand-shortname-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a[b-wr8sskoq1t] {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: .875rem;
+}
+
+.hx-sidebar-brand-name[b-wr8sskoq1t] {
+	font-size: 1.25rem;
+	margin-left: .5rem;
+	color: var(--hx-sidebar-brand-name-color);
+	font-weight: var(--hx-sidebar-brand-name-font-weight);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Navigation/HxSidebarFooter.razor.rz.scp.css */
+[b-zc68rx40t3] .nav-link {
+	line-height: 1;
+	padding: var(--hx-sidebar-footer-item-padding);
+	margin: var(--hx-sidebar-footer-item-margin);
+	font-size: var(--hx-sidebar-footer-item-font-size);
+	color: var(--hx-sidebar-footer-item-color);
+	border-radius: var(--hx-sidebar-footer-item-radius);
+}
+
+[b-zc68rx40t3] .nav-link:hover {
+	background-color: rgba(var(--hx-sidebar-footer-item-hover-background-color), var(--hx-sidebar-footer-item-hover-background-opacity));
+	color: var(--hx-sidebar-footer-item-hover-color);
+}
+
+[b-zc68rx40t3] .hx-sidebar-footer-navlink {
+	display: flex;
+	align-items: center;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Navigation/HxSidebarItem.razor.rz.scp.css */
+[b-7yp9wz11kh] .hx-sidebar-item {
+	display: block; /*Overrides the inline flex from btn-group placed by HxDropdown*/
+}
+
+[b-7yp9wz11kh] .nav-link {
+	line-height: 1;
+	padding: var(--hx-sidebar-item-padding);
+	margin: var(--hx-sidebar-item-margin);
+	font-size: var(--hx-sidebar-item-font-size);
+	color: var(--hx-sidebar-item-color);
+	border-radius: var(--hx-sidebar-item-border-radius);
+}
+
+[b-7yp9wz11kh] .hx-sidebar-item-navlink-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: stretch;
+	gap: .75rem;
+}
+
+[b-7yp9wz11kh] .hx-sidebar-subitems.collapse .nav-link,
+[b-7yp9wz11kh] .hx-sidebar-subitems.collapsing .nav-link {
+	margin: var(--hx-sidebar-subitem-margin);
+	padding: var(--hx-sidebar-subitem-padding);
+	font-size: var(--hx-sidebar-subitem-font-size);
+	display: flex;
+}
+
+[b-7yp9wz11kh] .hx-sidebar-subitems.show .hx-sidebar-item-navlink-content-inner {
+	display: inline-flex;
+}
+
+[b-7yp9wz11kh] .hx-sidebar-item-navlink-content-inner {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+[b-7yp9wz11kh] .hx-sidebar-collapsed-nav {
+	flex-direction: column;
+}
+
+[b-7yp9wz11kh] a.nav-link:hover,
+[b-7yp9wz11kh] a.nav-link.active:hover,
+[b-7yp9wz11kh] a.nav-link.active,
+.navbar-desktop-toggler:hover[b-7yp9wz11kh] {
+	background-color: rgba(var(--hx-sidebar-item-hover-background-color), var(--hx-sidebar-item-hover-background-opacity));
+	color: var(--hx-sidebar-item-hover-color);
+}
+
+[b-7yp9wz11kh] i {
+	color: var(--hx-sidebar-item-icon-color);
+	transition: transform .35s ease;
+	transform-origin: .5em 50%;
+}
+
+[b-7yp9wz11kh] a.nav-link:hover i,
+[b-7yp9wz11kh] a.nav-link.active i {
+	color: var(--hx-sidebar-item-hover-icon-color);
+}
+
+[b-7yp9wz11kh] .bi-chevron-right {
+	font-size: .75rem;
+	margin-left: .5rem;
+}
+
+[b-7yp9wz11kh] .dropdown-menu {
+	max-height: 100vh;
+	overflow: auto;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Offcanvas/HxOffcanvas.razor.rz.scp.css */
+.hx-offcanvas-footer[b-d2qb2c6y39] {
+  display: flex;
+  align-items: center;
+  padding: var(--hx-offcanvas-footer-padding-y)
+    var(--hx-offcanvas-footer-padding-x);
+}
+
+.offcanvas-start.hx-offcanvas-sm[b-d2qb2c6y39],
+.offcanvas-end.hx-offcanvas-sm[b-d2qb2c6y39] {
+  width: var(--hx-offcanvas-horizontal-width-sm);
+}
+.offcanvas-start.hx-offcanvas-lg[b-d2qb2c6y39],
+.offcanvas-end.hx-offcanvas-lg[b-d2qb2c6y39] {
+  width: var(--hx-offcanvas-horizontal-width-lg);
+}
+
+.hx-offcanvas-close-button[b-d2qb2c6y39] {
+    --bs-text-opacity: 1;
+    color: inherit;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Progress/HxProgressIndicator.razor.rz.scp.css */
+.hx-progress-overlay[b-ha9vhtqwa8] {
+    position: relative;
+}
+
+.hx-progress-indicator[b-ha9vhtqwa8] {
+    z-index: 1090;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--hx-progress-indicator-background);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.hx-progress-indicator-spinner[b-ha9vhtqwa8] {
+    color: var(--hx-progress-indicator-spinner-color);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Tags/Internal/HxInputTagsAutosuggestInput.razor.rz.scp.css */
+input:focus[b-23wbx32izd] {
+    outline: none;
+}
+
+input[b-23wbx32izd] {
+    background-color: inherit;
+    width: 100%;
+}
+
+[b-23wbx32izd]::placeholder {
+    color: var(--hx-input-tags-input-placeholder-color);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Tags/Internal/HxInputTagsInternal.razor.rz.scp.css */
+.hx-input-tags-control[b-gb1jfrh5wb] {
+	position: relative;
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+input:focus[b-gb1jfrh5wb] {
+	outline: none;
+}
+
+.dropdown[b-gb1jfrh5wb] {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: var(--hx-input-tags-input-width)
+}
+
+[b-gb1jfrh5wb] .hx-tag {
+	margin: var(--hx-input-tags-tag-margin);
+	display: flex;
+	align-items: center;
+}
+
+[b-gb1jfrh5wb] .hx-icon {
+	display: flex;
+}
+
+.hx-input-tags-naked-sm[b-gb1jfrh5wb]  {
+	font-size: var(--hx-input-tags-naked-font-size-sm);
+}
+
+.hx-input-tags-naked-lg[b-gb1jfrh5wb]  {
+	font-size: var(--hx-input-tags-naked-font-size-lg);
+}
+
+.hx-tag-remove-button[b-gb1jfrh5wb] {
+	display: inline-flex;
+	align-items: center;
+	margin: var(--hx-input-tags-remove-button-margin);
+	opacity: .6125;
+}
+
+.hx-tag-remove-button:hover[b-gb1jfrh5wb] {
+	opacity: 1;
+}
+
+.hx-input-tags-control-focused:not(.hx-input-tags-naked)[b-gb1jfrh5wb] {
+	box-shadow: var(--hx-input-tags-control-focused-box-shadow);
+	border-color: var(--hx-input-tags-control-focused-border-color);
+	outline: 0;
+}
+
+.hx-input-tags-control-disabled:not(.hx-input-tags-naked)[b-gb1jfrh5wb] {
+	background-color: var(--bs-gray-200);
+}
+
+.hx-tag-add-button-text[b-gb1jfrh5wb] {
+	margin: var(--hx-input-tags-add-button-text-margin);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Toasts/HxToastContainer.razor.rz.scp.css */
+.hx-toast-container[b-s6wlosgh2n] {
+	z-index: 1080;
+	margin: var(--hx-toast-container-margin);
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/TreeViews/HxTreeView.razor.rz.scp.css */
+.hx-tree-view[b-x7mon8gako] {
+  height: 100%;
+  overflow-y: auto;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/TreeViews/Internal/HxTreeViewItemInternal.razor.rz.scp.css */
+.hx-tree-view-item[b-so2pyrqosf] {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	padding: var(--hx-tree-view-item-padding);
+	margin: var(--hx-tree-view-item-margin);
+	font-size: var(--hx-tree-view-item-font-size);
+	border-radius: var(--hx-tree-view-item-border-radius);
+	background-color: var(--hx-tree-view-item-background);
+	color: var(--hx-tree-view-item-color);
+	transition: all 0.15s ease-in-out;
+	border-width: var(--hx-tree-view-item-border-width);
+	border-color: var(--hx-tree-view-item-border-color);
+	border-style: var(--hx-tree-view-item-border-style);
+}
+
+.hx-tree-view-item + .hx-tree-view-item[b-so2pyrqosf] {
+	border-top-width: 0;
+}
+
+.hx-tree-view-item.selected[b-so2pyrqosf],
+.hx-tree-view-item.selected:hover[b-so2pyrqosf] {
+	background-color: rgba(var(--hx-tree-view-item-selected-background), var(--hx-tree-view-item-hover-background-opacity));
+	color: var(--hx-tree-view-item-selected-color);
+}
+
+.hx-tree-view-item:hover[b-so2pyrqosf] {
+	background-color: rgba(var(--hx-tree-view-item-hover-background), var(--hx-tree-view-item-hover-background-opacity));
+	color: var(--hx-tree-view-item-hover-color);
+}
+
+.hx-tree-view-item-spacer[b-so2pyrqosf] {
+	flex: 0 0 var(--hx-tree-view-item-spacer-width);
+}
+
+.hx-tree-view-item-title[b-so2pyrqosf] {
+	flex: 1;
+}
+
+.hx-tree-view-item-icon[b-so2pyrqosf], .hx-tree-view-item-expander[b-so2pyrqosf] {
+	color: var(--hx-tree-view-item-hover-color);
+	margin: var(--hx-tree-view-item-icon-margin);
+}
+
+.hx-tree-view-item-expander[b-so2pyrqosf] {
+	transition: all 0.15s ease-in-out;
+	transform: rotate(0deg);
+}
+
+.hx-tree-view-item-expander-container:not(.collapsed) .hx-tree-view-item-expander[b-so2pyrqosf] {
+	transform: rotate(90deg);
+}
+
+.hx-tree-view-item-expander-container[b-so2pyrqosf] {
+	width: var(--hx-tree-view-expander-container-width);;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

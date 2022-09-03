@@ -9,8 +9,8 @@ namespace dtlnorUtilSite
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.JSInterop;
     using Toolbelt.Blazor.Extensions.DependencyInjection;
-    using Havit.Blazor.Components.Web;
-    using Havit.Blazor.Components.Web.Bootstrap;
+    ////using Havit.Blazor.Components.Web;
+    ////using Havit.Blazor.Components.Web.Bootstrap;
 
     public class Program
     {
@@ -25,8 +25,8 @@ namespace dtlnorUtilSite
                 {
                     // options.PersistanceLevel = PersistanceLevel.Session;
                 })
-                .AddBlazoredLocalStorage()
-                .AddHxServices();        // <------ ADD THIS LINE
+                .AddBlazoredLocalStorage();
+                ////.AddHxServices();        // <------ ADD THIS LINE
 
             await builder.Build().RunAsync();
         }

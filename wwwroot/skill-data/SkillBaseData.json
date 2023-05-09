@@ -1,806 +1,1162 @@
 [
   {
-    "SkillID": 0,
-    "MaxLevel": 0,
-    "IconColor": 0,
-    "WorthPointList": 0
-  },
-  {
     "SkillID": 1,
     "MaxLevel": 7,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 2,
     "MaxLevel": 5,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 4,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 3,
     "MaxLevel": 3,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 4,
     "MaxLevel": 5,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 5,
     "MaxLevel": 3,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 6,
     "MaxLevel": 7,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 7,
     "MaxLevel": 3,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 8,
     "MaxLevel": 3,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 9,
     "MaxLevel": 5,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 7,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 10,
     "MaxLevel": 3,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 11,
     "MaxLevel": 3,
     "IconColor": 10,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 12,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 13,
     "MaxLevel": 5,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 14,
     "MaxLevel": 5,
     "IconColor": 11,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 15,
     "MaxLevel": 5,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 16,
     "MaxLevel": 5,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 17,
     "MaxLevel": 5,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 18,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 6,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 19,
     "MaxLevel": 3,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 6,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 20,
     "MaxLevel": 3,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 6,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 21,
     "MaxLevel": 3,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 6,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 22,
     "MaxLevel": 5,
     "IconColor": 10,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 23,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 24,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 25,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 26,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 3,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 27,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 28,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 3,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 29,
     "MaxLevel": 1,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 30,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 31,
     "MaxLevel": 3,
     "IconColor": 13,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 32,
     "MaxLevel": 3,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 7,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 33,
     "MaxLevel": 5,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 7,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 34,
     "MaxLevel": 3,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 7,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 35,
     "MaxLevel": 5,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 10,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 36,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 10,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 37,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 38,
     "MaxLevel": 3,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 8,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 39,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 6,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 40,
     "MaxLevel": 3,
     "IconColor": 13,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 41,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 6,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 42,
     "MaxLevel": 3,
     "IconColor": 10,
-    "WorthPointList": 0
+    "CategoryId_1": 6,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 43,
     "MaxLevel": 1,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 4,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 44,
     "MaxLevel": 1,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 45,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 46,
     "MaxLevel": 2,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 47,
     "MaxLevel": 2,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 48,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 49,
     "MaxLevel": 3,
     "IconColor": 11,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 50,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 51,
     "MaxLevel": 3,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 52,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 53,
     "MaxLevel": 3,
     "IconColor": 13,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 54,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 55,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 56,
     "MaxLevel": 7,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 9,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 57,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 9,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 58,
     "MaxLevel": 3,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 8,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 59,
     "MaxLevel": 3,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 8,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 60,
     "MaxLevel": 3,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 14,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 61,
     "MaxLevel": 5,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 62,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 63,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 64,
     "MaxLevel": 3,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 10,
+    "CategoryId_2": 12,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 65,
     "MaxLevel": 5,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 10,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 66,
     "MaxLevel": 3,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 10,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 67,
     "MaxLevel": 3,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 13,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 68,
     "MaxLevel": 3,
     "IconColor": 11,
-    "WorthPointList": 0
+    "CategoryId_1": 13,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 69,
     "MaxLevel": 3,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 13,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 70,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 13,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 71,
     "MaxLevel": 3,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 13,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 72,
     "MaxLevel": 3,
     "IconColor": 10,
-    "WorthPointList": 0
+    "CategoryId_1": 13,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 73,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 74,
     "MaxLevel": 3,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 75,
     "MaxLevel": 3,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 76,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 77,
     "MaxLevel": 2,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 78,
     "MaxLevel": 3,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 79,
     "MaxLevel": 4,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 16,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 80,
     "MaxLevel": 3,
     "IconColor": 13,
-    "WorthPointList": 0
+    "CategoryId_1": 16,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 81,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 82,
     "MaxLevel": 1,
     "IconColor": 3,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 83,
     "MaxLevel": 1,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 84,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 85,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 14,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 86,
     "MaxLevel": 3,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 14,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 87,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 14,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 88,
     "MaxLevel": 3,
     "IconColor": 13,
-    "WorthPointList": 0
+    "CategoryId_1": 14,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 89,
     "MaxLevel": 5,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 14,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 90,
     "MaxLevel": 3,
     "IconColor": 13,
-    "WorthPointList": 0
+    "CategoryId_1": 14,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 91,
     "MaxLevel": 5,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 9,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 92,
     "MaxLevel": 1,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 9,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 93,
     "MaxLevel": 3,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 12,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 94,
     "MaxLevel": 1,
     "IconColor": 11,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 95,
     "MaxLevel": 1,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 96,
     "MaxLevel": 3,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 16,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 97,
     "MaxLevel": 1,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 98,
     "MaxLevel": 1,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 99,
     "MaxLevel": 1,
     "IconColor": 11,
-    "WorthPointList": 0
+    "CategoryId_1": 17,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 100,
     "MaxLevel": 4,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 6,
+    "CategoryId_2": 12,
+    "CategoryId_3": 15
   },
   {
     "SkillID": 101,
     "MaxLevel": 4,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 15,
+    "CategoryId_3": 12
   },
   {
     "SkillID": 102,
     "MaxLevel": 4,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 12,
+    "CategoryId_3": 6
   },
   {
     "SkillID": 103,
     "MaxLevel": 5,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 13,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 104,
     "MaxLevel": 3,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 105,
     "MaxLevel": 3,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 3,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 106,
     "MaxLevel": 3,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 107,
     "MaxLevel": 3,
     "IconColor": 11,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 3,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 108,
     "MaxLevel": 4,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 109,
     "MaxLevel": 5,
     "IconColor": 12,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 110,
     "MaxLevel": 5,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 111,
     "MaxLevel": 5,
     "IconColor": 6,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 112,
     "MaxLevel": 3,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 8,
+    "CategoryId_2": 15,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 113,
     "MaxLevel": 3,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 114,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 115,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 116,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 5,
+    "CategoryId_3": 6
   },
   {
     "SkillID": 117,
     "MaxLevel": 3,
     "IconColor": 9,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 4,
+    "CategoryId_3": 10
   },
   {
     "SkillID": 118,
     "MaxLevel": 5,
     "IconColor": 5,
-    "WorthPointList": 0
+    "CategoryId_1": 9,
+    "CategoryId_2": 12,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 119,
-    "MaxLevel": 0,
-    "IconColor": 0,
-    "WorthPointList": 0
+    "MaxLevel": 3,
+    "IconColor": 7,
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 120,
-    "MaxLevel": 0,
-    "IconColor": 0,
-    "WorthPointList": 0
-  },
-  {
-    "SkillID": 121,
-    "MaxLevel": 0,
-    "IconColor": 0,
-    "WorthPointList": 0
+    "MaxLevel": 3,
+    "IconColor": 7,
+    "CategoryId_1": 3,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 122,
     "MaxLevel": 2,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 9,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 123,
     "MaxLevel": 1,
     "IconColor": 1,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 124,
     "MaxLevel": 3,
     "IconColor": 10,
-    "WorthPointList": 0
+    "CategoryId_1": 5,
+    "CategoryId_2": 6,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 125,
     "MaxLevel": 3,
     "IconColor": 7,
-    "WorthPointList": 0
+    "CategoryId_1": 3,
+    "CategoryId_2": 4,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 126,
     "MaxLevel": 2,
     "IconColor": 2,
-    "WorthPointList": 0
+    "CategoryId_1": 2,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 127,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 128,
     "MaxLevel": 3,
     "IconColor": 4,
-    "WorthPointList": 0
+    "CategoryId_1": 1,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 129,
     "MaxLevel": 1,
     "IconColor": 8,
-    "WorthPointList": 0
-  },
-  {
-    "SkillID": 130,
-    "MaxLevel": 0,
-    "IconColor": 0,
-    "WorthPointList": 0
-  },
-  {
-    "SkillID": 131,
-    "MaxLevel": 3,
-    "IconColor": 7,
-    "WorthPointList": 0
-  },
-  {
-    "SkillID": 132,
-    "MaxLevel": 0,
-    "IconColor": 0,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
   },
   {
     "SkillID": 133,
     "MaxLevel": 1,
     "IconColor": 8,
-    "WorthPointList": 0
+    "CategoryId_1": 15,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 130,
+    "MaxLevel": 3,
+    "IconColor": 10,
+    "CategoryId_1": 5,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 131,
+    "MaxLevel": 3,
+    "IconColor": 7,
+    "CategoryId_1": 3,
+    "CategoryId_2": 5,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 132,
+    "MaxLevel": 3,
+    "IconColor": 1,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 134,
+    "MaxLevel": 3,
+    "IconColor": 9,
+    "CategoryId_1": 6,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 135,
+    "MaxLevel": 2,
+    "IconColor": 1,
+    "CategoryId_1": 9,
+    "CategoryId_2": 12,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 136,
+    "MaxLevel": 3,
+    "IconColor": 7,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 121,
+    "MaxLevel": 3,
+    "IconColor": 5,
+    "CategoryId_1": 9,
+    "CategoryId_2": 10,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 138,
+    "MaxLevel": 3,
+    "IconColor": 8,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 139,
+    "MaxLevel": 3,
+    "IconColor": 7,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 137,
+    "MaxLevel": 2,
+    "IconColor": 6,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 145,
+    "MaxLevel": 3,
+    "IconColor": 7,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 140,
+    "MaxLevel": 3,
+    "IconColor": 1,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 141,
+    "MaxLevel": 3,
+    "IconColor": 6,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 142,
+    "MaxLevel": 3,
+    "IconColor": 1,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 143,
+    "MaxLevel": 3,
+    "IconColor": 8,
+    "CategoryId_1": 0,
+    "CategoryId_2": 0,
+    "CategoryId_3": 0
+  },
+  {
+    "SkillID": 146,
+    "MaxLevel": 1,
+    "IconColor": 2,
+    "CategoryId_1": 15,
+    "CategoryId_2": 17,
+    "CategoryId_3": 0
   }
 ]

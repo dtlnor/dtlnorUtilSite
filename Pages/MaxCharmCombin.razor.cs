@@ -91,7 +91,7 @@
         protected string CharmCount { get; set; } = string.Empty;
 
         [Obsolete("Now control by i18n")]
-        protected Global.LangIndex SkillNameLang { get; set; } = Global.LangIndex.eng;
+        protected Global.LangIndex SkillNameLang { get; set; } = Global.LangIndex.English;
 
         protected int MaxWeight { get; set; } = 5;
 
@@ -519,36 +519,50 @@
 
             public static readonly Dictionary<LangIndex, string> LANGUAGE_NAME_LOOKUP = new()
             {
-                ////{ LangIndex.ara, "العربية" },
-                { LangIndex.chS, "简体中文" },
-                { LangIndex.chT, "繁體中文" },
-                { LangIndex.eng, "English" },
-                ////{ LangIndex.fre, "Français" },
-                ////{ LangIndex.ger, "Deutsch" },
-                ////{ LangIndex.ita, "Italiano" },
-                { LangIndex.jpn, "日本語" },
-                { LangIndex.kor, "한국어" },
-                ////{ LangIndex.pol, "Polski" },
-                ////{ LangIndex.ptB, "Português do Brasil" },
-                ////{ LangIndex.rus, "Русский" },
-                ////{ LangIndex.spa, "Español" }
+                { LangIndex.SimplifiedChinese, "简体中文" },
+                { LangIndex.TraditionalChinese, "繁體中文" },
+                { LangIndex.English, "English" },
+                { LangIndex.Japanese, "日本語" },
+                { LangIndex.Korean, "한국어" }
             };
 
             public enum LangIndex
             {
-                jpn,
-                eng,
-                fre,
-                ita,
-                ger,
-                spa,
-                rus,
-                ptB = 10,
-                kor,
-                chT,
-                chS,
-                ara = 21,
-                pol = 26,
+                Japanese = 0,
+                English = 1,
+                French = 2,
+                Italian = 3,
+                German = 4,
+                Spanish = 5,
+                Russian = 6,
+                Polish = 7,
+                Dutch = 8,
+                Portuguese = 9,
+                PortugueseBr = 10,
+                Korean = 11,
+                TraditionalChinese = 12,
+                SimplifiedChinese = 13,
+                Finnish = 14,
+                Swedish = 15,
+                Danish = 16,
+                Norwegian = 17,
+                Czech = 18,
+                Hungarian = 19,
+                Slovak = 20,
+                Arabic = 21,
+                Turkish = 22,
+                Bulgarian = 23,
+                Greek = 24,
+                Romanian = 25,
+                Thai = 26,
+                Ukrainian = 27,
+                Vietnamese = 28,
+                Indonesian = 29,
+                Fiction = 30,
+                Hindi = 31,
+                LatinAmericanSpanish = 32,
+                Max = 33,
+                Unknown = 33,
             }
         }
     }

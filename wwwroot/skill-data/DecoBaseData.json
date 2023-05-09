@@ -1010,16 +1010,6 @@
     "SkillLv": 1
   },
   {
-    "DecoID": 0,
-    "SortID": 0,
-    "Rare": 0,
-    "IconColor": 0,
-    "BasePrice": 0,
-    "DecoLv": 0,
-    "SkillID": 0,
-    "SkillLv": 0
-  },
-  {
     "DecoID": 110,
     "SortID": 918,
     "Rare": 7,
@@ -1668,5 +1658,765 @@
     "DecoLv": 4,
     "SkillID": 54,
     "SkillLv": 2
+  },
+  {
+    "DecoID": 159,
+    "SortID": 322,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 54,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 186,
+    "SortID": 321,
+    "Rare": 9,
+    "IconColor": 11,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 107,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 191,
+    "SortID": 320,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 46,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 190,
+    "SortID": 319,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 47,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 187,
+    "SortID": 318,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 45,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 213,
+    "SortID": 317,
+    "Rare": 9,
+    "IconColor": 10,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 124,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 158,
+    "SortID": 316,
+    "Rare": 9,
+    "IconColor": 13,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 40,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 197,
+    "SortID": 315,
+    "Rare": 9,
+    "IconColor": 6,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 5,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 225,
+    "SortID": 314,
+    "Rare": 9,
+    "IconColor": 5,
+    "BasePrice": 6000,
+    "DecoLv": 1,
+    "SkillID": 118,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 154,
+    "SortID": 313,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 81,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 166,
+    "SortID": 312,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 106,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 201,
+    "SortID": 311,
+    "Rare": 9,
+    "IconColor": 4,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 25,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 149,
+    "SortID": 310,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 18,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 183,
+    "SortID": 309,
+    "Rare": 9,
+    "IconColor": 4,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 23,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 210,
+    "SortID": 308,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 3,
+    "SkillID": 126,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 115,
+    "SortID": 307,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 73,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 116,
+    "SortID": 306,
+    "Rare": 9,
+    "IconColor": 5,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 74,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 117,
+    "SortID": 305,
+    "Rare": 9,
+    "IconColor": 12,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 75,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 118,
+    "SortID": 304,
+    "Rare": 9,
+    "IconColor": 6,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 78,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 208,
+    "SortID": 303,
+    "Rare": 9,
+    "IconColor": 1,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 12,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 212,
+    "SortID": 302,
+    "Rare": 7,
+    "IconColor": 1,
+    "BasePrice": 3000,
+    "DecoLv": 1,
+    "SkillID": 123,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 211,
+    "SortID": 301,
+    "Rare": 9,
+    "IconColor": 4,
+    "BasePrice": 6000,
+    "DecoLv": 3,
+    "SkillID": 127,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 214,
+    "SortID": 300,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 116,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 199,
+    "SortID": 266,
+    "Rare": 9,
+    "IconColor": 5,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 19,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 200,
+    "SortID": 265,
+    "Rare": 9,
+    "IconColor": 12,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 20,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 193,
+    "SortID": 264,
+    "Rare": 9,
+    "IconColor": 6,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 21,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 219,
+    "SortID": 263,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 125,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 173,
+    "SortID": 262,
+    "Rare": 9,
+    "IconColor": 3,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 10,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 217,
+    "SortID": 261,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 131,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 238,
+    "SortID": 260,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 116,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 239,
+    "SortID": 259,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 1,
+    "SkillID": 100,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 202,
+    "SortID": 258,
+    "Rare": 9,
+    "IconColor": 1,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 48,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 203,
+    "SortID": 257,
+    "Rare": 9,
+    "IconColor": 11,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 49,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 194,
+    "SortID": 256,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 50,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 206,
+    "SortID": 255,
+    "Rare": 9,
+    "IconColor": 10,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 22,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 139,
+    "SortID": 254,
+    "Rare": 9,
+    "IconColor": 6,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 17,
+    "SkillLv": 4
+  },
+  {
+    "DecoID": 136,
+    "SortID": 253,
+    "Rare": 9,
+    "IconColor": 4,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 16,
+    "SkillLv": 4
+  },
+  {
+    "DecoID": 133,
+    "SortID": 252,
+    "Rare": 9,
+    "IconColor": 12,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 15,
+    "SkillLv": 4
+  },
+  {
+    "DecoID": 130,
+    "SortID": 251,
+    "Rare": 9,
+    "IconColor": 11,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 14,
+    "SkillLv": 4
+  },
+  {
+    "DecoID": 127,
+    "SortID": 250,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 13,
+    "SkillLv": 4
+  },
+  {
+    "DecoID": 246,
+    "SortID": 212,
+    "Rare": 9,
+    "IconColor": 8,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 122,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 245,
+    "SortID": 211,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 1,
+    "SkillID": 102,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 198,
+    "SortID": 210,
+    "Rare": 9,
+    "IconColor": 3,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 9,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 244,
+    "SortID": 209,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 1,
+    "SkillID": 101,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 209,
+    "SortID": 208,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 3,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 243,
+    "SortID": 207,
+    "Rare": 9,
+    "IconColor": 4,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 127,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 240,
+    "SortID": 206,
+    "Rare": 9,
+    "IconColor": 10,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 124,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 226,
+    "SortID": 205,
+    "Rare": 9,
+    "IconColor": 10,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 130,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 228,
+    "SortID": 204,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 119,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 227,
+    "SortID": 203,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 120,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 177,
+    "SortID": 202,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 37,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 241,
+    "SortID": 201,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 126,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 242,
+    "SortID": 200,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 3,
+    "SkillID": 112,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 231,
+    "SortID": 161,
+    "Rare": 9,
+    "IconColor": 5,
+    "BasePrice": 6000,
+    "DecoLv": 2,
+    "SkillID": 121,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 196,
+    "SortID": 160,
+    "Rare": 9,
+    "IconColor": 6,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 4,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 247,
+    "SortID": 159,
+    "Rare": 9,
+    "IconColor": 6,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 103,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 248,
+    "SortID": 158,
+    "Rare": 9,
+    "IconColor": 10,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 130,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 232,
+    "SortID": 157,
+    "Rare": 9,
+    "IconColor": 1,
+    "BasePrice": 6000,
+    "DecoLv": 1,
+    "SkillID": 135,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 249,
+    "SortID": 156,
+    "Rare": 9,
+    "IconColor": 5,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 118,
+    "SkillLv": 3
+  },
+  {
+    "DecoID": 251,
+    "SortID": 155,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 119,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 252,
+    "SortID": 154,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 125,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 250,
+    "SortID": 153,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 120,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 230,
+    "SortID": 152,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 3,
+    "SkillID": 134,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 182,
+    "SortID": 151,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 91,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 253,
+    "SortID": 150,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 131,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 259,
+    "SortID": 109,
+    "Rare": 9,
+    "IconColor": 2,
+    "BasePrice": 500,
+    "DecoLv": 1,
+    "SkillID": 146,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 261,
+    "SortID": 108,
+    "Rare": 9,
+    "IconColor": 4,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 128,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 195,
+    "SortID": 107,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 2,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 178,
+    "SortID": 106,
+    "Rare": 9,
+    "IconColor": 8,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 51,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 254,
+    "SortID": 105,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 117,
+    "SkillLv": 1
+  },
+  {
+    "DecoID": 255,
+    "SortID": 104,
+    "Rare": 9,
+    "IconColor": 5,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 121,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 256,
+    "SortID": 103,
+    "Rare": 9,
+    "IconColor": 1,
+    "BasePrice": 6000,
+    "DecoLv": 3,
+    "SkillID": 135,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 257,
+    "SortID": 102,
+    "Rare": 9,
+    "IconColor": 9,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 134,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 168,
+    "SortID": 101,
+    "Rare": 9,
+    "IconColor": 3,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 6,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 167,
+    "SortID": 100,
+    "Rare": 9,
+    "IconColor": 7,
+    "BasePrice": 6000,
+    "DecoLv": 4,
+    "SkillID": 1,
+    "SkillLv": 2
+  },
+  {
+    "DecoID": 0,
+    "SortID": 0,
+    "Rare": 0,
+    "IconColor": 0,
+    "BasePrice": 0,
+    "DecoLv": 0,
+    "SkillID": 0,
+    "SkillLv": 0
   }
 ]
